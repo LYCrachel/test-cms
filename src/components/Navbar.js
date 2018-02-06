@@ -16,10 +16,10 @@ const Navbar = () => (
       </div>
       <div className="navbar-start">
         <Link className="navbar-item" to="/about">
-          About
+          plan
         </Link>
         <Link className="navbar-item" to="/products">
-          Products
+          access
         </Link>
       </div>
       <div className="navbar-end">
