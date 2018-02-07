@@ -24,6 +24,7 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="title">
+          <p className="titleText">優しい温もりに心癒されるリラクゼーションスペース</p>
           <h1 className="has-text-weight-bold is-size-2">レ・マンズ・M</h1>
         </div>
 
@@ -31,7 +32,7 @@ export default class IndexPage extends React.Component {
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container clearfix">
+        <div className="container">
           <div className="main_content">
             {posts
               .filter(post => post.node.frontmatter.templateKey === "blog-post")
