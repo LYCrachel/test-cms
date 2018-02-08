@@ -34,11 +34,13 @@ body
   position: relative
   height: 450px
 
+.title:not(:last-child)
+  margin-bottom: 0 !important
+
 .titleText
   position: absolute
   top: calc(75% - 17.5px)
   left: calc(50% - 384px)
-
 
 .has-text-weight-bold
   position: absolute
@@ -48,9 +50,28 @@ body
 section
   padding: 0 0 3rem 0 !important
 
-.container
-  width: 1000px
+.navbar
+  background: #B45F04 !important
+  border: 1px solid #000
+
+.navContent
+  width: 1150px
   margin: 0 auto
+  display: flex
+
+.navbar-item
+  width: 20%
+  border-right: 1px solid #000
+
+.navbar-item:first-child
+  border-left: 1px solid #000
+
+.navbar-title
+  font-size: 20px
+  text-align: center
+
+.container
+  margin: 20px auto 0 !important
 
 .container:after
   content: ""
@@ -58,7 +79,7 @@ section
   display: block
 
 .content
-  width: 780px
+  width: 900px
   border-radius: 10px
   background: #fff
 
@@ -68,6 +89,28 @@ section
 .sidebar
   float: left
   margin-left: 20px
-  width: 200px
+  width: 222px
+
+.tel
   border: 1px solid #000
+  border-radius: 10px
+
+.tel-text
+  background: #c6dea6
+  font-weight: bold
+  font-size: 20px
+  text-align: center
+  border-bottom: 1px solid #000
+  border-radius: 10px 10px 0 0 
+  padding: 10px 0
+
+.tel-number
+  text-align: center
+  font-size: 25px
+  font-weight: bold
+  background: #fff
+  border-radius: 0 0 10px 10px 
+  padding: 10px 0
+
+
 @import "~bulma"
