@@ -26,9 +26,9 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="title">
-          <figure className="image-masako">
+          {/* <figure className="image-masako">
             <img src={logo} alt="logo" style={{ width: '200px' }} />
-          </figure>
+          </figure> */}
           <p className="titleText">優しい温もりに心癒されるリラクゼーションスペース</p>
           <h1 className="mainTitle">レ・マンズ・M</h1>
         </div>

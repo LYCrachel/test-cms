@@ -16,12 +16,12 @@ const Navbar = () => (
       <div className="navbar-right">
         <Link className="navbar-item" to="/about">
           <span className="navbar-title">
-            plan
+            MENU
           </span>
         </Link>
         <Link className="navbar-item" to="/products">
           <span className="navbar-title">
-            access
+            ACCESS
           </span>
         </Link>
       </div>
