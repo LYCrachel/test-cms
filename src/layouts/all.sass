@@ -32,12 +32,12 @@ body
   background: #FA58F4
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
   position: relative
-  height: 600px
+  height: 500px
   margin-top: 50px
-  background-image: url("../img/shop4.jpg")
-  background-size: cover
-  background-position: center
-  background-repeat: no-repeat
+  background-image: url("../img/shop4.jpg"),url("../img/shop3.jpg")
+  background-size: 51%,50%
+  background-position: right,left
+  background-repeat: no-repeat,no-repeat
   border-bottom: 2px double #000000
 
 .title:not(:last-child)
@@ -49,15 +49,14 @@ body
   text-shadow: 2px 2px 1px #000
   top: calc(75% - 17.5px)
   left: calc(50% - 384px)
-  color: #ffffff
+  color: #000000
 
 .mainTitle
   position: absolute
   font-weight: bold
-  text-shadow: 2px 2px 1px #000
   top: calc(50%)
   left: calc(50% - 205px)
-  color: #ffffff
+  color: #e4007f
   font-size: 60px
 
 section
@@ -138,7 +137,8 @@ section
   padding: 5px
 
 .image-masako
-  margin-left: 50px
+  position: absolute
+  left: 
 
 .name
   font-size: 25px
