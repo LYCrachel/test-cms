@@ -69,7 +69,7 @@ export default class IndexPage extends React.Component {
               <figure className="image-masako">
                 <img src={masako} alt="masako" style={{ width: '200px'}} />
               </figure>
-              <p className="name">長岡 未佐子</p>
+              <p className="name">長岡 末佐子</p>
               <p className="name">(ながおか まさこ)</p>
               <div className="masako-info">
                 <p className="masako-text">レ・マンズ・Ｍ技術認定スクール代表</p>
