@@ -27,14 +27,19 @@ export default class IndexPage extends React.Component {
 
     return (
       <section className="section">
-        <div className="title">
-          <div className="yuba">
-            <figure className="image-masako-logo">
-              <img src={logo} alt="logo" style={{ width: '200px' }} />
-            </figure>
-            <p className="titleText">優しい温もりに心癒されるリラクゼーションスペース</p>
-            <h1 className="mainTitle">レ・マンズ・M</h1>
+        <div className="hero yuba">
+        <div className="hero-body">
+          <div className="container">
+              <div className="">
+                <figure className="image-masako-logo">
+                  <img src={logo} alt="logo" style={{ width: '200px' }} />
+                </figure>
+                <p className="titleText">優しい温もりに心癒されるリラクゼーションスペース</p>
+                <h1 className="mainTitle">レ・マンズ・M</h1>
+              </div>
           </div>
+        </div>
+          
         </div>
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
