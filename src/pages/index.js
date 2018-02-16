@@ -28,7 +28,7 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="hero yuba">
-        <div className="hero-body">
+        <div className="hero-body yuba2">
           <div className="container">
               <div className="">
                 <figure className="image-masako-logo">
