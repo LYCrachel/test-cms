@@ -4,6 +4,8 @@ import Script from "react-load-script";
 import graphql from "graphql";
 import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
+import counseling from "../img/shop6.jpg";
+import space from "../img/shop5.jpg";
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -26,11 +28,13 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="title">
-          <figure className="image-masako">
-            <img src={logo} alt="logo" style={{ width: '200px' }} />
-          </figure>
-          <p className="titleText">優しい温もりに心癒されるリラクゼーションスペース</p>
-          <h1 className="mainTitle">レ・マンズ・M</h1>
+          <div className="yuba">
+            <figure className="image-masako-logo">
+              <img src={logo} alt="logo" style={{ width: '200px' }} />
+            </figure>
+            <p className="titleText">優しい温もりに心癒されるリラクゼーションスペース</p>
+            <h1 className="mainTitle">レ・マンズ・M</h1>
+          </div>
         </div>
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
@@ -38,6 +42,44 @@ export default class IndexPage extends React.Component {
         />
         <div className="container">
           <div className="main_content">
+            <div className="greeting">
+              <div className="greeting-head">
+                <p className="greeting-1">ご訪問ありがとうございます</p>
+                <p className="greeting-2">今年1月に南手城町にリニューアルオープンしました</p>
+                <p className="greeting-3">美しさと健康に導く「手」のある癒しの空間</p>
+                <h2 className="greeting-4"><span>レ・マンズ・M (エム)</span>です。</h2>
+              </div>
+              <div className="greeting-middle">
+                <div className="space">
+                  <figure className="space-img">
+                    <img src={counseling} alt="counseling" style={{ width: '200px' }} />
+                  </figure>
+                </div>
+                <div className="text-area">
+                  <p className="text-top">サロンスペースでは、</p>
+                  <p classNam="text-contents">お客様へのカウンセリングを行ったり</p>
+                  <p classNam="text-contents">施術後にオススメのお茶で寛いで頂いており</p>
+                  <p classNam="text-contents"><span>「ゆったりできる」と評判です。</span></p>
+                </div>
+              </div>
+              <div className="greeting-bottom">
+                <div className="text-area2">
+                  <p className="text2-top">「ついつい寝てしまいます」</p>
+                  <p className="text2-contents">と、お声を頂く施術スペースでは</p>
+                  <p className="text2-contents">お一人お一人の体質・体調に合わせた</p>
+                  <p className="text2-contents"><span>レ・マンズ・M (エム)オリジナルトリートメントメソッド</span>で</p>
+                  <p className="text2-contents">フェイシャル、ヘッドスパ、そして全身にわたり</p>
+                  <p className="text2-contents">リンパマッサージを行い</p>
+                  <p className="text2-contents">お客様の美と健康に磨きをかけるお手伝いを</p>
+                  <p className="text2-contents">させていただいています。</p>
+                </div>
+                <div className="space">
+                  <figure className="space-img">
+                    <img src={space} alt="space" style={{ width: '200px' }}/>
+                  </figure>
+                </div>
+              </div>
+            </div>
             {posts
               .filter(post => post.node.frontmatter.templateKey === "blog-post")
               .map(({ node: post }) => (
