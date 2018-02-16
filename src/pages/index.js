@@ -42,6 +42,20 @@ export default class IndexPage extends React.Component {
         />
         <div className="container">
           <div className="main_content">
+            <div className="information">
+              {posts
+                .filter(post => post.node.frontmatter.templateKey === "blog-post")
+                .map(({ node: post }) => (
+                  <div className="information-contents" key={post.id}>
+                    <Link className="information-item" to={post.frontmatter.path}>
+                      {post.frontmatter.title}
+                      <small className="information-date">{post.frontmatter.date}</small>
+                    </Link>
+                  </div>
+                ))}
+              </div>
+
+
             <div className="greeting">
               <div className="greeting-head">
                 <p className="greeting-1">ご訪問ありがとうございます</p>
@@ -57,21 +71,22 @@ export default class IndexPage extends React.Component {
                 </div>
                 <div className="text-area">
                   <p className="text-top">サロンスペースでは、</p>
-                  <p classNam="text-contents">お客様へのカウンセリングを行ったり</p>
-                  <p classNam="text-contents">施術後にオススメのお茶で寛いで頂いており</p>
-                  <p classNam="text-contents"><span>「ゆったりできる」と評判です。</span></p>
+                  <p className="text-contents">お客様へのカウンセリングを行ったり<br/>
+                                                施術後にオススメのお茶で寛いで頂いており</p>
+                  <p className="text-contents"><span>「ゆったりできる」</span>と評判です。</p>
                 </div>
               </div>
               <div className="greeting-bottom">
                 <div className="text-area2">
                   <p className="text2-top">「ついつい寝てしまいます」</p>
-                  <p className="text2-contents">と、お声を頂く施術スペースでは</p>
-                  <p className="text2-contents">お一人お一人の体質・体調に合わせた</p>
-                  <p className="text2-contents"><span>レ・マンズ・M (エム)オリジナルトリートメントメソッド</span>で</p>
-                  <p className="text2-contents">フェイシャル、ヘッドスパ、そして全身にわたり</p>
-                  <p className="text2-contents">リンパマッサージを行い</p>
-                  <p className="text2-contents">お客様の美と健康に磨きをかけるお手伝いを</p>
-                  <p className="text2-contents">させていただいています。</p>
+                  <p className="text2-contents">と、お声を頂く施術スペースでは<br/>
+                                                お一人お一人の体質・体調に合わせた<br/>
+                                                <span>レ・マンズ・M (エム)オリジナル</span><br/>
+                                                <span>トリートメントメソッド</span>で<br/>
+                                                フェイシャル、ヘッドスパ<br/>
+                                                そして全身にわたりリンパマッサージを行い</p>
+                  <p className="text2-contents">お客様の美と健康に磨きをかけるお手伝いを<br/>
+                                                させていただいています。</p>
                 </div>
                 <div className="space">
                   <figure className="space-img">
@@ -80,31 +95,8 @@ export default class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
-            {posts
-              .filter(post => post.node.frontmatter.templateKey === "blog-post")
-              .map(({ node: post }) => (
-                <div
-                  className="content"
-                  style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
-                  key={post.id}
-                >
-                  <p>
-                    <Link className="has-text-primary" to={post.frontmatter.path}>
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <small>{post.frontmatter.date}</small>
-                  </p>
-                  <p>
-                    {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.frontmatter.path}>
-                      Keep Reading →
-                    </Link>
-                  </p>
-                </div>
-              ))}
+
+              
           </div>
           <div className="sidebar">
             <div className="masako">
@@ -114,17 +106,18 @@ export default class IndexPage extends React.Component {
               <p className="name">長岡 末佐子</p>
               <p className="name">(ながおか まさこ)</p>
               <div className="masako-info">
-                <p className="masako-text">レ・マンズ・Ｍ技術認定スクール代表</p>
-                <p className="masako-text">(社)日本予防医学アカデミー認定校</p>
-                <p className="masako-text">予防医学健康美協会リンパケアマネジャー</p>
-                <p className="masako-text">心身痩術協会　美容整体師</p>
-                <p className="masako-text">AYURVADA(アユルベーダ)セラピスト</p>
+                <p className="masako-text">レ・マンズ・Ｍ技術認定スクール代表<br/>
+                                          (社)日本予防医学アカデミー認定校<br/>
+                                          予防医学健康美協会リンパケアマネジャー<br/>
+                                          心身痩術協会　美容整体師<br/>
+                                          AYURVADA(アユルベーダ)セラピスト
+                </p>
               </div>
             </div>
             <div className="accessMap">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7487104581096!2d133.39406931462378!3d34.483898502307376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35511142c48dc3d5%3A0x330fb0bb6803506!2z44CSNzIxLTA5NjMg5bqD5bO255yM56aP5bGx5biC5Y2X5omL5Z-O55S677yT5LiB55uu77yX4oiS77yZ!5e0!3m2!1sja!2sjp!4v1518140441835"
-                style={{ border: "0", width: "210", height: "200", frameborder: "0"}}
+                style={{ border: "0", width: "100%", height: "200", frameborder: "0"}}
                 allowfullscreen>
               </iframe>
               <div className="address">
