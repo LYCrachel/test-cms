@@ -46,7 +46,7 @@ export default class IndexPage extends React.Component {
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container is-flex">
+        <div className="container is-flex-desktop-only">
           <div className="main_content">
             <div className="information">
               {posts
