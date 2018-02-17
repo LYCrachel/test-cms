@@ -6,6 +6,7 @@ import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
 import counseling from "../img/shop6.jpg";
 import space from "../img/shop5.jpg";
+import title from "../img/レマンズ.jpg";
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -27,17 +28,19 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <section className="hero">
+        <section className="hero is-large">
           <div className="yuba">
             <div className="hero-body yuba2">
-              <div className="container">
+              <div className="container has-text-centered">
                 <figure className="image-masako-logo">
-                  <img src={logo} alt="logo" style={{ width: "200px" }} />
+                  <img src={logo} alt="logo" width="150" />
+                </figure>
+                <figure className="image-masako-title">
+                  <img src={title} alt="レマンズ" width="350" />
                 </figure>
                 <p className="titleText">
                   優しい温もりに心癒されるリラクゼーションスペース
                 </p>
-                <h1 className="mainTitle">レ・マンズ・M</h1>
               </div>
             </div>
           </div>
@@ -46,7 +49,7 @@ export default class IndexPage extends React.Component {
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container is-flex-desktop-only">
+        <div className="container is-flex-desktop main">
           <div className="main_content">
             <div className="information">
               {posts
@@ -129,11 +132,15 @@ export default class IndexPage extends React.Component {
           </div>
           <div className="sidebar">
             <div className="masako">
-              <figure className="image-masako">
-                <img src={masako} alt="masako" style={{ width: "200px" }} />
-              </figure>
-              <p className="name">長岡 末佐子</p>
-              <p className="name">(ながおか まさこ)</p>
+              <div className="is-flex-desktop">
+                <figure className="image-masako">
+                  <img src={masako} alt="masako" style={{ width: "200px" }} />
+                </figure>
+                <div className="name">
+                  <p className="name">長岡 末佐子</p>
+                  <p className="name">(ながおか まさこ)</p>
+                </div>
+              </div>
               <div className="masako-info">
                 <p className="masako-text">
                   レ・マンズ・Ｍ技術認定スクール代表<br />
@@ -153,7 +160,6 @@ export default class IndexPage extends React.Component {
                   height: "200",
                   frameborder: "0"
                 }}
-                allowfullscreen
               />
               <div className="address">
                 <p className="addressNumber">〒 721-0963</p>

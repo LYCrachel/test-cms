@@ -3,20 +3,20 @@ import Link from "gatsby-link";
 
 import github from "../img/github-icon.svg";
 import logo from "../img/Lesmains_logo_transparent.gif";
+import title from "../img/レマンズ.jpg";
+
 
 const Navbar = () => (
-  <nav className="navbar is-fixed-top is-transparent">
+  <nav className="navbar is-fixed-top is-flex is-transparent nav-height">
     <div className="navbar-brand">
       <Link to="/" className="navbar-item">
         <img className="navbar-logo" src={logo} alt="logo" width="48" />
-        <span className="has-text-weight-semibold has-text-danger is-size-4">
-          レ・マンズ・M
-        </span>
+        <img className="navbar-title" src={title} alt="レマンズ" width="48" />
       </Link>
     </div>
     <div className="navbar-start" />
 
-    <div className="navbar-end">
+    <div className="navbar-end is-flex">
       <Link className="navbar-item" to="/about">
         <span className="navbar-title">MENU</span>
       </Link>

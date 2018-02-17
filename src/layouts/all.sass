@@ -27,15 +27,18 @@ $primary-invert: $kaldi-red-invert
   margin-top: 0 !important
 
 body
-  background: linear-gradient(-135deg, #8A4B08, #F5DA81)
+  background-color: #e4oo7f
 
 // title
 
 .yuba
   background-image: url("../img/shop6.jpg"),url("../img/shop5.jpg")
   background-position: right,left
-  background-size: 51%,50%
+  background-size: 50%
   background-repeat: no-repeat,no-repeat
+  +touch
+    background-image: url("../img/shop6.jpg")
+    width: 100%
 
 .yuba2
   background-color: rgba(255,255,255,0.3)
@@ -43,12 +46,7 @@ body
 .titleText
   font-weight: bold
   color: #000000
-
-.mainTitle
-  font-weight: bold
-  text-shadow: 2px 2px 1px #000
-  color: #e4007f
-  font-size: 60px
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
 
 // navbar
 
@@ -57,6 +55,9 @@ body
 
 html.has-navbar-fixed-top
   padding-top: 
+
+.nav-height
+  height: 8rem
 
 .navbar-logo
   margin-right: 1rem
@@ -69,15 +70,8 @@ html.has-navbar-fixed-top
   text-align: center
 
 // main
-
-// .container
-//   margin: 20px auto 0 !important
-//   display: flex !important
-
-// .container:after
-//   content: ""
-//   clear: both
-//   display: block
+.main
+  margin-top: 1rem
 
 .information
   width: 100%
@@ -97,6 +91,8 @@ html.has-navbar-fixed-top
 .main_content
   +desktop
     margin-right: 1rem
+  +touch
+    padding: 1rem
 
 .greeting
   text-align: center
@@ -123,6 +119,11 @@ html.has-navbar-fixed-top
   padding: 40px 0
   text-align: left
   margin-left: 20px
+  +touch
+    width: 100%
+    text-align: center
+    padding: 20px 0
+    font-size: 20px
 
 .space
   width: 50%
@@ -172,9 +173,9 @@ html.has-navbar-fixed-top
 .sidebar
   flex-shrink: 0
   width: 30%
-//   float: left
-//   margin-left: 20px
-//   width: 30%
+  +touch
+    width: 100%
+    padding: 1rem
 
 .masako
   border: 1px solid #000000
