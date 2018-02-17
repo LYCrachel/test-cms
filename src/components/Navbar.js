@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 
 import github from "../img/github-icon.svg";
 import logo from "../img/Lesmains_logo_transparent.gif";
-import title from "../img/レマンズ.jpg";
+import title from "../img/レマンズ.gif";
 
 
 const Navbar = () => (
@@ -11,7 +11,7 @@ const Navbar = () => (
     <div className="navbar-brand">
       <Link to="/" className="navbar-item">
         <img className="navbar-logo" src={logo} alt="logo" width="48" />
-        <img className="navbar-title" src={title} alt="レマンズ" width="48" />
+        <img className="navbar-title" src={title} alt="レマンズ" width="150" />
       </Link>
     </div>
     <div className="navbar-start" />

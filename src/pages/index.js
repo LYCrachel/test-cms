@@ -6,7 +6,7 @@ import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
 import counseling from "../img/shop6.jpg";
 import space from "../img/shop5.jpg";
-import title from "../img/レマンズ.jpg";
+import title from "../img/レマンズ.gif";
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -33,10 +33,10 @@ export default class IndexPage extends React.Component {
             <div className="hero-body yuba2">
               <div className="container has-text-centered">
                 <figure className="image-masako-logo">
-                  <img src={logo} alt="logo" width="150" />
+                  <img src={logo} alt="logo" width="200" />
                 </figure>
                 <figure className="image-masako-title">
-                  <img src={title} alt="レマンズ" width="350" />
+                  <img src={title} alt="レマンズ" width="500" />
                 </figure>
                 <p className="titleText">
                   優しい温もりに心癒されるリラクゼーションスペース
