@@ -28,8 +28,8 @@ export default class IndexPage extends React.Component {
 
     return (
       <div>
-        <section className="hero is-large">
-          <div className="yuba">
+        <section className="hero is-fullheight">
+          <div className="hero-body yuba">
             <div className="hero-body yuba2">
               <div className="container has-text-centered">
                 <figure className="image-masako-logo">
@@ -167,8 +167,8 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
             <div className="tel">
-              <p className="tel-text">お問い合わせはこちら</p>
-              <p className="tel-number">090-8245-3516</p>
+              <p className="tel-text is-size-4 has-text-centered">お問い合わせはこちら</p>
+              <p className="tel-number is-size-3 has-text-centered">090-8245-3516</p>
             </div>
           </div>
         </div>
