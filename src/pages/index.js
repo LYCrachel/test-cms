@@ -30,7 +30,7 @@ export default class IndexPage extends React.Component {
       <div>
         <section className="hero is-fullheight">
           <div className="hero-body yuba">
-            <div className="hero-body yuba2">
+            <div className="hero-body yuba2 is-fullheight">
               <div className="container has-text-centered">
                 <figure className="image-masako-logo">
                   <img src={logo} alt="logo" width="200" />
@@ -137,8 +137,8 @@ export default class IndexPage extends React.Component {
                   <img src={masako} alt="masako" style={{ width: "200px" }} />
                 </figure>
                 <div className="name">
-                  <p className="name">長岡 末佐子</p>
-                  <p className="name">(ながおか まさこ)</p>
+                  <p className="is-size-6 has-text-centered">長岡 末佐子</p>
+                  <p className="is-size-7 has-text-centered">(ながおか まさこ)</p>
                 </div>
               </div>
               <div className="masako-info">
@@ -151,7 +151,7 @@ export default class IndexPage extends React.Component {
                 </p>
               </div>
             </div>
-            <div className="accessMap">
+            {/* <div className="accessMap">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7487104581096!2d133.39406931462378!3d34.483898502307376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35511142c48dc3d5%3A0x330fb0bb6803506!2z44CSNzIxLTA5NjMg5bqD5bO255yM56aP5bGx5biC5Y2X5omL5Z-O55S677yT5LiB55uu77yX4oiS77yZ!5e0!3m2!1sja!2sjp!4v1518140441835"
                 style={{
@@ -165,13 +165,26 @@ export default class IndexPage extends React.Component {
                 <p className="addressNumber">〒 721-0963</p>
                 <p className="address-text">広島県福山市南手城町3丁目7番9号</p>
               </div>
-            </div>
+            </div> */}
             <div className="tel">
               <p className="tel-text is-size-4 has-text-centered">お問い合わせはこちら</p>
               <p className="tel-number is-size-3 has-text-centered">090-8245-3516</p>
             </div>
           </div>
         </div>
+        <footer className="container is-semimiddle">
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7487104581096!2d133.39406931462378!3d34.483898502307376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35511142c48dc3d5%3A0x330fb0bb6803506!2z44CSNzIxLTA5NjMg5bqD5bO255yM56aP5bGx5biC5Y2X5omL5Z-O55S677yT5LiB55uu77yX4oiS77yZ!5e0!3m2!1sja!2sjp!4v1518140441835"
+              style={{
+                border: "0",
+                width: "100%",
+                height: "100vh",
+                frameborder: "0"
+              }}
+            />
+          </div>
+        </footer>
       </div>
     );
   }

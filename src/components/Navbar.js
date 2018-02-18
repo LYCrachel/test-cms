@@ -16,7 +16,7 @@ const Navbar = () => (
     </div>
     <div className="navbar-start" />
 
-    <div className="navbar-end is-flex">
+    <div className="navbar-end is-flex contents-height">
       <Link className="navbar-item" to="/about">
         <span className="navbar-title">MENU</span>
       </Link>

@@ -35,6 +35,7 @@ body
   background-image: url("../img/shop6.jpg"),url("../img/shop5.jpg")
   background-position: right,left
   background-repeat: no-repeat
+  padding: 0
   +touch
     background-image: url("../img/shop6.jpg")
     width: 100%
@@ -71,9 +72,13 @@ html.has-navbar-fixed-top
   font-size: 20px
   text-align: center
 
+.contents-height
+  padding-top: 4rem
+
 // main
 .main
   margin-top: 1rem
+  margin-bottom: 1rem
 
 .information
   width: 100%
@@ -184,7 +189,7 @@ html.has-navbar-fixed-top
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
   border-radius: 10px
   background: #dff2d8
-  margin-bottom: 10px
+  margin-bottom: 1rem
   padding: 5px
 
 .image-masako
@@ -208,12 +213,9 @@ html.has-navbar-fixed-top
 
 .accessMap
   background: #ffffff
-  margin-bottom: 10px
+  margin-bottom: 1rem
   border-radius: 10px
   padding: 10px
-
-.address
-  border: 1px solid #000000
 
 .tel
   border: 1px solid #000
@@ -222,15 +224,11 @@ html.has-navbar-fixed-top
 .tel-text
   background: #c6dea6
   font-weight: bold
-  // font-size: 20px
-  // text-align: center
   border-bottom: 1px solid #000
   border-radius: 10px 10px 0 0 
   padding: 10px 0
 
 .tel-number
-  // text-align: center
-  // font-size: 25px
   font-weight: bold
   background: #fff
   border-radius: 0 0 10px 10px 
