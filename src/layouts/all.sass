@@ -23,6 +23,9 @@ $primary-invert: $kaldi-red-invert
 
 @import "~bulma"
 
+.back
+  background: #ffffff
+
 .margin-top-0
   margin-top: 0 !important
 
@@ -30,7 +33,7 @@ body
   background-color: rgba(224, 0, 228, 0.06)
 
 section
-  margin-top: 9rem
+  padding: 100px 0
 
 // title
 
@@ -65,6 +68,7 @@ html.has-navbar-fixed-top
 
 .nav-height
   height: 8rem
+  display: none !important
 
 .navbar-logo
   margin-right: 1rem
@@ -79,149 +83,34 @@ html.has-navbar-fixed-top
 .contents-height
   padding-top: 4rem
 
-// main
-.main
-  margin-top: 1rem
-  margin-bottom: 1rem
+// contents
 
 .information
-  width: 100%
-  border: 10px solid #00FF40
-  margin-bottom: 30px
-
-.information-contents
-  width: 100%
-  background: #fff
-  border: 1px solid #00FF40
-
-.information-item
-  display: block
-  width: 100%
-  padding: 10px
-
-.main_content
-  +desktop
-    margin-right: 1rem
-  +touch
-    padding: 1rem
+  &__contents
+  &__item
+    border: 1px solid #000000
+    border-bottom: none
+    &:last-child
+      border-bottom: 1px solid #000000
+    &--contents
+    display: block
+    width: 100%
+    padding: 10px
 
 .greeting
-  text-align: center
-  border: 8px solid #2ECCFA
-  background: #ffffff
-  padding: 30px 20px
-
-.greeting-head
-  margin-bottom: 30px
-
-.greeting-4 span
-  color: #e4007f
-  font-weight: bold
-  font-size: 20px
-
-.greeting-middle
-  display: flex
-  margin: 0 auto 30px
-  +touch
-    flex-wrap: wrap
-
-.text-area
-  width: 50%
-  padding: 40px 0
-  text-align: left
-  margin-left: 20px
-  +touch
-    width: 100%
-    text-align: center
-    padding: 20px 0
-    font-size: 20px
-
-.space
-  width: 50%
-  +touch
-    width: 100%
-
-.space-img
-  margin: 0 auto
-  background: #F6CEEC
-  padding: 30px 0
-  width: 100%
-
-.space-img img
-  width: 80% !important
-
-.text-top
-  color: #8A4B08
-  line-height: 62px
-
-.text-contents
-  color: #8A4B08
-
-.text-contents:nth-child(4)
-  line-height: 62px
-
-.text-contents span
-  color: #00FF00
-
-.greeting-bottom
-  display: flex
-
-.text-area2
-  width: 60%
-  text-align: right
-  padding: 20px 0
-  margin-right: 20px
-
-.text2-contents
-  color: #8A4B08
-
-.text2-contents span
-  color: #e4007f
-  font-weight: bold
+  &__main
+    padding: 2rem 3rem
+  &__image
+    border-radius: 50%
+  &__text
+    & strong
+      color: #e4007f
 
 // introduction
-
 .introduction
-  border: 1px solid #000000
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
-  border-radius: 2rem
-  background: #dff2d8
-  margin-bottom: 1rem
-  padding: 2rem
+  &__masako
+    border-radius: 50%
+  &__contents
+    margin: 0 auto
 
-.image-masako
-  width: 50%
-
-.masako
-  font-weight: bold
-  background: #ffffff
-  padding: 2rem
-  border-radius: 2rem
-  &-info
-    width: 50%
-
-.accessMap
-  background: #ffffff
-  margin-bottom: 1rem
-  border-radius: 2rem
-  padding: 10px
-
-.tel
-  border: 1px solid #000
-  border-radius: 2rem
-
-.tel-text
-  background: #c6dea6
-  font-weight: bold
-  border-bottom: 1px solid #000
-  border-radius: 2rem 2rem 0 0 
-  padding: 2rem 0
-
-.tel-number
-  font-weight: bold
-  background: #fff
-  border-radius: 0 0 2rem 2rem 
-  padding: 2rem 0
-
-
-
+.school

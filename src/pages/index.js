@@ -49,119 +49,128 @@ export default class IndexPage extends React.Component {
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
         />
-        <div className="container">
+        <div className="">
           <section className="information">
-            {posts
-              .filter(
-                post => post.node.frontmatter.templateKey === "blog-post"
-              )
-              .map(({ node: post }) => (
-                <div className="information-contents" key={post.id}>
-                  <Link
-                    className="information-item"
-                    to={post.frontmatter.path}
-                  >
-                    {post.frontmatter.title}
-                    <small className="information-date">
-                      {post.frontmatter.date}
-                    </small>
-                  </Link>
-                </div>
-              ))}
-          </section>
-
-          <section className="greeting">
-            <div className="greeting-head">
-              <p className="greeting-1">ご訪問ありがとうございます</p>
-              <p className="greeting-2">
-                今年1月に南手城町にリニューアルオープンしました
-              </p>
-              <p className="greeting-3">
-                美しさと健康に導く「手」のある癒しの空間
-              </p>
-              <h2 className="greeting-4">
-                <span>レ・マンズ・M (エム)</span>です。
-              </h2>
-            </div>
-            <div className="greeting-middle">
-              <div className="space">
-                <figure className="space-img">
-                  <img
-                    src={counseling}
-                    alt="counseling"
-                    style={{ width: "200px" }}
-                  />
-                </figure>
-              </div>
-              <div className="text-area">
-                <p className="text-top">サロンスペースでは、</p>
-                <p className="text-contents">
-                  お客様へのカウンセリングを行ったり<br />
-                  施術後にオススメのお茶で寛いで頂いており
-                </p>
-                <p className="text-contents">
-                  <span>「ゆったりできる」</span>と評判です。
-                </p>
-              </div>
-            </div>
-            <div className="greeting-bottom">
-              <div className="text-area2">
-                <p className="text2-top">「ついつい寝てしまいます」</p>
-                <p className="text2-contents">
-                  と、お声を頂く施術スペースでは<br />
-                  お一人お一人の体質・体調に合わせた<br />
-                  <span>レ・マンズ・M (エム)オリジナル</span>
-                  <br />
-                  <span>トリートメントメソッド</span>で<br />
-                  フェイシャル、ヘッドスパ<br />
-                  そして全身にわたりリンパマッサージを行い
-                </p>
-                <p className="text2-contents">
-                  お客様の美と健康に磨きをかけるお手伝いを<br />
-                  させていただいています。
-                </p>
-              </div>
-              <div className="space">
-                <figure className="space-img">
-                  <img src={space} alt="space" style={{ width: "200px" }} />
-                </figure>
-              </div>
+            <h2 className="title has-text-centered">INFORMATION</h2>
+            <div className="information__contents">
+              {posts
+                .filter(
+                  post => post.node.frontmatter.templateKey === "blog-post"
+                )
+                .map(({ node: post }) => (
+                  <div className="information__item" key={post.id}>
+                    <Link
+                      className="information__item--contents"
+                      to={post.frontmatter.path}
+                    >
+                      {post.frontmatter.title}
+                      <small className="information-date">
+                        {post.frontmatter.date}
+                      </small>
+                    </Link>
+                  </div>
+                ))}
             </div>
           </section>
 
-          <section className="introduction">
-            <h1 className="has-text-centered is-size-3">INTRODUCTION</h1>
-            <div className="masako  is-flex-desktop">
-              <figure className="image-masako">
-                <img src={masako} alt="masako" style={{ width: "200px" }} />
-              </figure>
-              <div className="masako-info">
-                <div className="name">
-                  <p className="is-size-3 has-text-centered">長岡 末佐子</p>
-                  <p className="is-size-4 has-text-centered">(ながおか まさこ)</p>
+          <section className="greeting back is-fullheight">
+            <h2 className="title has-text-centered">GREETING</h2>
+            <div className="greeting__main">
+              <p className="is-size-6 has-text-centered greeting__text">
+                ご訪問ありがとうございます<br/>
+                今年1月に南手城町にリニューアルオープンしました<br/>
+                美しさと健康に導く「手」のある癒しの空間<br/>
+                <strong className="is-size-4">レ・マンズ・M (エム)</strong>です。
+              </p>
+              <div className="container">
+                <div className="is-flex-desktop">
+                  <figure>
+                    <img
+                      className="greeting__image"
+                      src={counseling}
+                      alt="counseling"
+                      style={{ width: "200px" }}
+                    />
+                  </figure>
+                  <div className="greeting__text--first">
+                    <p className="is-size-5">
+                      サロンスペースでは、<br/>
+                      お客様へのカウンセリングを行ったり<br/>
+                      施術後にオススメのお茶で寛いで頂いており<br/>
+                      <span>「ゆったりできる」</span>と評判です。
+                    </p>
+                  </div>
                 </div>
-                <p className="masako-text has-text-centered is-size-5">
-                  レ・マンズ・Ｍ技術認定スクール代表<br />
-                  (社)日本予防医学アカデミー認定校<br />
-                  予防医学健康美協会リンパケアマネジャー<br />
-                  心身痩術協会　美容整体師<br />
-                  AYURVADA(アユルベーダ)セラピスト
-                </p>
+                <div className="is-flex-desktop">
+                  <figure>
+                    <img
+                      className="greeting__image"
+                      src={space}
+                      alt="space"
+                      style={{ width: "200px" }}
+                    />
+                  </figure>
+                  <div className="greeting__text--second">
+                    <p className="is-size-5">
+                      <span>「ついつい寝てしまいます」</span><br/>
+                      と、お声を頂く施術スペースでは<br/>
+                      お一人お一人の体質・体調に合わせた<br/>
+                      <strong>レ・マンズ・M (エム)オリジナルトリートメントメソッド</strong>で<br/>
+                      フェイシャル、ヘッドスパ<br/>
+                      そして全身にわたりリンパマッサージを行い<br/>
+                      お客様の美と健康に磨きをかけるお手伝いを<br/>
+                      させていただいています。
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+          </section>
+
+          <section className="introduction is-fullheight">
+            <h2 className="has-text-centered title">INTRODUCTION</h2>
+            <div className="container">
+              <div className="introduction__contents is-flex-desktop">
+                <figure>
+                  <img className="introduction__masako" src={masako} alt="masako" style={{ width: "200px" }} />
+                </figure>
+                <div className="masako-info">
+                  <div className="name">
+                    <p className="is-size-3 has-text-centered">長岡 末佐子</p>
+                    <p className="is-size-4 has-text-centered">(ながおか まさこ)</p>
+                  </div>
+                  <p className="masako-text has-text-centered is-size-5">
+                    レ・マンズ・Ｍ技術認定スクール代表<br />
+                    (社)日本予防医学アカデミー認定校<br />
+                    予防医学健康美協会リンパケアマネジャー<br />
+                    心身痩術協会　美容整体師<br />
+                    AYURVADA(アユルベーダ)セラピスト
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="school back is-fullheight">
+            <h2 className="title has-text-centered">SCHOOL</h2>
+            <div className="container">
+
             </div>
           </section>
 
           <section className="tel">
-            <p className="tel-text is-size-4 has-text-centered">お問い合わせはこちら</p>
+            <h2 className="title has-text-centered">CONTACT</h2>
             <p className="tel-number is-size-3 has-text-centered">090-8245-3516</p>
           </section>
 
 
-          <section className="access continer">
-            <h1 className="has-text-centered is-size-2">ACCESS</h1>
-            <div className="adress">
-              <p>〒 721-0963</p>
-              <p>広島県福山市南手城町3丁目7番9号</p>
+          <section className="access back is-fullheight">
+            <h2 className="has-text-centered title">ACCESS</h2>
+            <div className="container">
+              <p className="is-size-5">
+                〒 721-0963<br/>
+                広島県福山市南手城町3丁目7番9号
+              </p>
             </div>
             <div>
               <iframe
