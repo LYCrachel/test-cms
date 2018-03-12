@@ -4,8 +4,8 @@ import Script from "react-load-script";
 import graphql from "graphql";
 import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
-import counseling from "../img/shop6.jpg";
-import space from "../img/shop5.jpg";
+import counseling from "../img/shop_2.jpg";
+import space from "../img/shop_1.jpg";
 import title from "../img/レマンズ.gif";
 
 export default class IndexPage extends React.Component {
