@@ -154,17 +154,163 @@ export default class IndexPage extends React.Component {
           <section className="school back is-fullheight">
             <h2 className="title has-text-centered">SCHOOL</h2>
             <div className="container">
+                <div className="school__concept">
+                  <h3><strong>≪スクール、コンセプト！≫</strong></h3>
+                  <p>
+                    カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
+                    レ・マンズ・Mのスクールコンセプトは、<br/>
+                    レ・マンズ・Mのロゴの中にすべて表されています。<br/>
+                    確かな知識と技術で、お客様に施術を行い、ボディケアはもちろんの事、<br/>
+                    暖かさや、心の癒しを、感じて頂けるサロンであり、施術者でありたいという思いを基本に、<br/>
+                    このロゴが出来上がりました。
+                  </p>
+                </div>
+                <div className="school__color">
+                  <h3><strong><span>ローズマゼンダ（❤の色）</span>「成熟」と「収穫」第8チャクラ</strong></h3>
+                  <p>
+                    レッドの情熱とブルーの視野の広さを持っています。<br/>
+                    「今を生きる」レッドは、先の報酬に囚われることなく、今の情熱のままに<br/>
+                    「種まき（能動的アクション）」を起こします。<br/>
+                    逆の質を持つブルーは短絡的にならず、その「種を育て」「収穫を待つ」事が出来ます。<br/>
+                    受け取った収穫はまた「種」になります。<br/>
+                    こうして、一見バラバラな行為を「自分から差し出すこと」で「自分で繋ぎ」<br/>
+                    「より多くの成熟（成果）を得る事ができる」のがローズマゼンダの「成熟」「収穫」なのです。
+                  </p>
+                </div>{/*school__color*/}
+                <div className="school__colorOther">
+                  <h3>レ・マンズ　＝　両手（❤の下の5色）</h3>
+                  <div className="school__colorOther--red">
+                    <h4><strong><span>❤レッド</span>「火」の色　第1チャクラ</strong></h4>
+                    <p>
+                      「火が赤々と燃えるさま」を表しています。
+                      人間の文明は「火により始まる」と言われています。
+                      「火」は古くから、「エネルギー」「パワー」「生命力」をあらわし、
+                      「人類の進歩（前進）」の礎だったのです。
+                    </p>
+                  </div>{/*school__colorOther--red*/}
+                  <div className="school__colorOther--orange">
+                    <h4><strong><span>❤オレンジ</span>「燃え盛る（焚火）」の色　第2チャクラ（五感刺激）</strong></h4>
+                    <p>
+                      人々は「焚火」の周囲に集い、古代も今も、人々は、火を囲んで語らい、<br/>
+                      簡素な暮らしの中の僅かな時間を楽しみました。<br/>
+                      「刺激的」「楽しい」「社交的」「美味しいもの」を食べる「綺麗なもの」を見る<br/>
+                      新しい分野（人間関係や経験など）を「開拓」するなど、「いつもと違うことをしている自分」<br/>
+                      を楽しむ色です。
+                    </p>
+                  </div>{/*school__colorOther--orange*/}
+                  <div className="school__colorOther--yellow">
+                    <h4><strong><span>❤イエロー</span>「太陽」の色　第3チャクラ（精神的刺激）</strong></h4>
+                    <p>
+                      「知性」「知識」を意味します。「知識を探究する」「好奇心をみたす」ことは黄色の「喜び」を<br/>
+                      生み出します。何かを学んだり、知識を増やしたりするのに向いています。<br/>
+                      太陽が放出する「光」は、「知性」も表します。「黄」の語源は火のついた矢！<be/>
+                      黄色の「知性」は、その光の矢で後世までを照らします。
+                    </p>
+                  </div>{/*school__colorOther--yellow*/}
+                  <div className="school__colorOther--green">
+                    <h4><strong><span>❤グリーン</span>「調和」の色　第4チャクラ（ハート）</strong></h4>
+                    <p>
+                      緑は「群居性」のある「植物」の色。「心のまま」に「自由」に「変化・成長」を遂げながら<br/>
+                      周囲の人とも「調和」が取れていれば「リラックス」の中で「自己成長」を感じます。<br/>
+                      緑色は「対人関係と自己の調和」をサポートしてくれる色です。
+                    </p>
+                  </div>{/*school__colorOther--green*/}
+                </div>{/*school__colorOther*/}
 
             </div>
           </section>
 
-          <section className="tel">
+          <section className="menu is-fullheight">
+            <h2 className="title has-text-centered">MENU</h2>
+            <div className="container">
+              <div className="menu__main">
+                <div className="menu__contents--back">
+                  <table className="menu__contents">
+                    <tr>
+                      <th colspan="3" rowspan="3"><strong>経絡リンパケアトリートメント</strong></th>
+                      <td className="minit">40分</td>
+                      <td className="price">4,500円</td>
+                    </tr>
+                    <tr>
+                      <td className="minit">60分</td>
+                      <td className="price">5,500円</td>
+                    </tr>
+                    <tr>
+                      <td>80分</td>
+                      <td>7,500円</td>
+                    </tr>
+                    <tr className="menu__contents">
+                      <th rowspan="4">痩身</th> 
+                      <th rowspan="2">上半身 or 下半身</th>
+                      <th>（ 1回）</th>
+                      <td colspan="2">5,000円</td>
+                    </tr>
+                    <tr>
+                      <th>（12回）</th>
+                      <td colspan="2">45,000円</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">全身</th>
+                      <th>（ 1回）</th>
+                      <td colspan="2">9,000円</td>
+                    </tr>
+                    <tr>
+                      <th>（12回）</th>
+                      <td colspan="2">75,000円</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3">フェイス（超音波付）</th>
+                      <td colspan="2">3,000円</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">プラスパック</td>
+                      <td colspan="2">500円</td>
+                    </tr>
+                    <tr>
+                      <th colspan="3">超音波（セルフ）</th>
+                      <td colspan="2">500円</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div className="privilege is-size-4 has-text-centered">
+                  <h3 className="is-size-3"><strong>≪特典≫</strong></h3>
+                  <div className="menu__contents--back is-flex-desktop has-text-centered">
+                    <div className="privilege__first">
+                      <h4><strong>☆ポイントカード</strong></h4>
+                      <p>
+                        1,000円で1P<br/>
+                        30P 1,000円割引<br/>
+                        50P 2,000円割引<br/>
+                      </p>
+                    </div>{/*privilege__first*/}
+                    <div className="privilege__second">
+                      <h4><strong>☆ご来店割引券</strong></h4>
+                      <p>
+                        ご来店1回に付き<br />
+                        200円券<br />
+                      </p>
+                    </div>{/*privilege__second*/}
+                    <div className="privilege__third">
+                      <h4><strong>☆ご紹介割引券</strong></h4>
+                      <p>
+                        お一人ご紹介で<br />
+                        500円券<br />
+                      </p>
+                    </div>{/*privilege__third*/}
+                  </div>{/*is-flex-desktop*/}
+                </div>{/*privilege*/}
+              </div>{/*menu__main*/}
+            </div>{/*container*/}
+          </section>
+
+          <section className="tel back">
             <h2 className="title has-text-centered">CONTACT</h2>
             <p className="tel-number is-size-3 has-text-centered">090-8245-3516</p>
           </section>
 
 
-          <section className="access back is-fullheight">
+          <section className="access is-fullheight">
             <h2 className="has-text-centered title">ACCESS</h2>
             <div className="container">
               <p className="is-size-5">

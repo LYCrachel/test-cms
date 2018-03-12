@@ -35,6 +35,28 @@ body
 section
   padding: 100px 0
 
+td
+  text-align: right!important
+  padding: 0 1rem 1rem 0
+  +touch
+    width: 100%
+    display: block
+    text-align: center!important
+
+th
+  text-align: left
+  padding-right: 1rem
+  +touch
+    width: 100%
+    display: block
+    text-align: center!important
+
+table
+  margin: 0 auto
+  font-size: 1.5rem
+  +touch
+    font-size: 1.3rem
+
 // title
 
 .yuba
@@ -89,13 +111,14 @@ html.has-navbar-fixed-top
   &__contents
   &__item
     border: 1px solid #000000
+    background: #ffffff
     border-bottom: none
     &:last-child
       border-bottom: 1px solid #000000
     &--contents
-    display: block
-    width: 100%
-    padding: 10px
+      display: block
+      width: 100%
+      padding: 10px
 
 .greeting
   &__main
@@ -110,7 +133,33 @@ html.has-navbar-fixed-top
 .introduction
   &__masako
     border-radius: 50%
+    +touch
+      margin-left: calc(50% - 6rem)
   &__contents
     margin: 0 auto
 
 .school
+
+.menu
+  &__contents
+    &--back
+      background: #ffffff
+      border-radius: 5rem
+      +desktop
+        padding: 5rem
+        width: 50rem
+        margin: 0 auto
+      +touch
+        padding: 2rem
+        margin: 1rem
+
+//privilege
+.privilege
+  padding-top: 1rem
+  &__first
+    padding: 1rem
+  &__second
+    padding: 1rem
+  &__third
+    padding: 1rem
+
