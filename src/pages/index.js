@@ -7,6 +7,7 @@ import logo from "../img/Lesmains_logo_transparent.gif";
 import counseling from "../img/shop_2.jpg";
 import space from "../img/shop_1.jpg";
 import title from "../img/レマンズ.gif";
+import logologo from "../img/logo.gif";
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -51,7 +52,7 @@ export default class IndexPage extends React.Component {
         />
         <div className="">
           <section className="information">
-            <h2 className="title has-text-centered">INFORMATION</h2>
+            <h2 className="title has-text-centered">≪INFORMATION≫</h2>
             <div className="information__contents">
               {posts
                 .filter(
@@ -74,30 +75,36 @@ export default class IndexPage extends React.Component {
           </section>
 
           <section className="greeting back is-fullheight">
-            <h2 className="title has-text-centered">GREETING</h2>
+            <h2 className="title has-text-centered">≪SALON CONCEPT≫</h2>
             <div className="greeting__main">
-              <p className="is-size-6 has-text-centered greeting__text">
-                ご訪問ありがとうございます<br/>
-                今年1月に南手城町にリニューアルオープンしました<br/>
-                美しさと健康に導く「手」のある癒しの空間<br/>
-                <strong className="is-size-4">レ・マンズ・M (エム)</strong>です。
+              <p className="is-size-5 has-text-centered greeting__text">
+                レ・マンズ・M (エム)では、<br/>
+                ・東洋医学より、経絡・経穴（ツボ）<br/>
+                ・西洋医学より、リンパドレナージュ<br/>
+                ・インド伝承医学より、アーユルヴェーダ。<br/>
+                それぞれの施術を融合し<br/>
+                「レ・マンズ・M・オリジナルトリートメントメゾット」<br/>
+                を、つくりあげました。<br/>
+                この「体の中から不要な老廃物などを排出し、キレイになる特別なメソット」<br/>
+                で、あなたの美しさにさらなる磨きをかけるお手伝いをいたします。
               </p>
-              <div className="container">
+              <div className="container greeting__concept">
                 <div className="is-flex-desktop">
                   <figure>
                     <img
                       className="greeting__image"
-                      src={counseling}
-                      alt="counseling"
+                      src={logologo}
+                      alt="logologo"
                       style={{ width: "200px" }}
                     />
                   </figure>
                   <div className="greeting__text--first">
-                    <p className="is-size-5">
-                      サロンスペースでは、<br/>
-                      お客様へのカウンセリングを行ったり<br/>
-                      施術後にオススメのお茶で寛いで頂いており<br/>
-                      <span>「ゆったりできる」</span>と評判です。
+                    <h4 className="is-size-5">Consept1　優しさの溢れる手</h4>
+                    <p className="is-size-6">
+                      「レ・マンス(Les Mains)」とは、<br/>
+                      フランス語で「両手」を意味します。<br/>
+                      暖かく、ふくよかな手で包まれた時の<br/>
+                      あの優しい感覚をトリートメントとサロンに活かしています。<br/>
                     </p>
                   </div>
                 </div>
@@ -111,15 +118,31 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text--second">
-                    <p className="is-size-5">
-                      <span>「ついつい寝てしまいます」</span><br/>
-                      と、お声を頂く施術スペースでは<br/>
-                      お一人お一人の体質・体調に合わせた<br/>
-                      <strong>レ・マンズ・M (エム)オリジナルトリートメントメソッド</strong>で<br/>
-                      フェイシャル、ヘッドスパ<br/>
-                      そして全身にわたりリンパマッサージを行い<br/>
-                      お客様の美と健康に磨きをかけるお手伝いを<br/>
-                      させていただいています。
+                    <h4 className="is-size-5">Concept2　お客様と丁寧に向き合う</h4>
+                    <p className="is-size-6">
+                      2006年11月のオープン以来、もっとも大切にしているのは、<br/>
+                      「お客様一人ひとりの体質や体調、ご希望に合わせた最適なトリートメントの提供」。<br/>
+                      自らの体験を通して「これ！」と思う技術を習得し、<br/>
+                      磨き続けた中から生まれたオリジナルのメソットで、<br/>
+                      お客様の美と健康の目的に合わせてサポートいたします。<br/>
+                    </p>
+                  </div>
+                </div>
+                <div className="is-flex-desktop">
+                  <figure>
+                    <img
+                      className="greeting__image"
+                      src={counseling}
+                      alt="counseling"
+                      style={{ width: "200px" }}
+                    />
+                  </figure>
+                  <div className="greeting__text--third">
+                    <h4 className="is-size-5">Concept3　心と体がゆったりする時空間づくり</h4>
+                    <p className="is-size-6">
+                      オリジナルのメソッドによるトリートメントは、ゆったりとした時間の流れの中で、<br />
+                      優しい音楽や照明の灯り、心が柔らかくなる香りなど、<br />
+                      五感に心地よい心と体への癒しの空間にて体感いただけます。<br />
                     </p>
                   </div>
                 </div>
@@ -128,148 +151,224 @@ export default class IndexPage extends React.Component {
           </section>
 
           <section className="introduction is-fullheight">
-            <h2 className="has-text-centered title">INTRODUCTION</h2>
+            <h2 className="has-text-centered title">≪INTRODUCTION≫</h2>
             <div className="container">
               <div className="introduction__contents is-flex-desktop">
                 <figure>
-                  <img className="introduction__masako" src={masako} alt="masako" style={{ width: "200px" }} />
+                  <img className="introduction__masako" src={masako} alt="masako" />
                 </figure>
-                <div className="masako-info">
-                  <div className="name">
+                <div className="introduction__masako-info">
+                  <div className="introduction__name">
                     <p className="is-size-3 has-text-centered">長岡 末佐子</p>
                     <p className="is-size-4 has-text-centered">(ながおか まさこ)</p>
                   </div>
-                  <p className="masako-text has-text-centered is-size-5">
-                    レ・マンズ・Ｍ技術認定スクール代表<br />
-                    (社)日本予防医学アカデミー認定校<br />
-                    予防医学健康美協会リンパケアマネジャー<br />
-                    心身痩術協会　美容整体師<br />
-                    AYURVADA(アユルベーダ)セラピスト
-                  </p>
+                  <table className="introduction__masako--text has-text-centered is-size-5">
+                    <tbody>
+                      <tr className="introduction__masako--sell">
+                        <th className="introduction__masako--title">2005年 5月</th>
+                        <td className="introduction__masako--contents">予防医学健康美協会</td>
+                        <td className="introduction__masako--contents">リンパケアアドバイザーの資格取得</td>
+                      </tr>
+                      <tr className="introduction__masako--sell">
+                        <th className="introduction__masako--title" rowSpan="2">2005年10月</th>
+                        <td className="introduction__masako--contents" colSpan="2">日本ナチュラルカラーリストスクール</td>
+                      </tr>
+                      <tr>
+                        <td className="introduction__masako--contents introduction__next--text" colSpan="2">センセーション・カラーセラピーセラピスト取得</td>
+                      </tr>
+                      <tr className="introduction__masako--sell">
+                        <th className="introduction__masako--title" rowSpan="2">2006年 4月</th>
+                        <td className="introduction__masako--contents" rowSpan="2">予防医学健康美協会</td>
+                        <td className="introduction__masako--contents">リンパケアマネージャーの資格取得後</td>
+                      </tr>
+                      <tr>
+                        <td className="introduction__masako--contents introduction__next--text">スクール講師になる</td>
+                      </tr>
+                      <tr className="introduction__masako--sell">
+                        <th className="introduction__masako--title">2006年11月</th>
+                        <td className="introduction__masako--contents">身心療術師協会</td>
+                        <td className="introduction__masako--contents">経絡セラピスト中級コース取得</td>
+                      </tr>
+                      <tr>
+                        <th className="introduction__masako--title">2010年 5月</th>
+                        <td className="introduction__masako--contents">レ・マンズ・M</td>
+                        <td className="introduction__masako--contents">中医リンパケア技術認定スクール　代表</td>
+                      </tr>
+                      <tr>
+                        <th className="introduction__masako--title">2010年10月</th>
+                        <td className="introduction__masako--contents">マユーラ企画（(株)）</td>
+                        <td className="introduction__masako--contents">アーユルヴェーダ　ヘッドアビアンガ取得</td>
+                      </tr>
+                      <tr>
+                        <th className="introduction__masako--title">2010年11月</th>
+                        <td className="introduction__masako--contents introduction__next--text" colSpan="2">ボディアビアンガ取得</td>
+                      </tr>
+                      <tr>
+                        <th className="introduction__masako--title">2013年 4月</th>
+                        <td className="introduction__masako--contents" colSpan="2">(社)1:29:300日本予防医学アカデミー技術講師兼務</td>
+                      </tr>
+                      <tr>
+                        <th className="introduction__masako--title" rowSpan="2">2015年 8月</th>
+                        <td className="introduction__masako--contents" colSpan="2">(社)インターナショナルスーパーフード協会</td>
+                      </tr>
+                      <tr>
+                        <td className="introduction__masako--contents introduction__next--text" colSpan="2">スーパーフードアドバイザー　取得</td>
+                      </tr>
+                      <tr>
+                        <th className="introduction__masako--title">2017年 3月</th>
+                        <td className="introduction__masako--contents">レ・マンズ・M</td>
+                        <td className="introduction__masako--contents">中医学ボディコーディネートスクール　代表</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="school back is-fullheight">
-            <h2 className="title has-text-centered">SCHOOL</h2>
+          <section className="concept back is-fullheight">
+            <h2 className="title has-text-centered">≪SCHOOL CONCEPT≫</h2>
             <div className="container">
-                <div className="school__concept">
-                  <h3><strong>≪スクール、コンセプト！≫</strong></h3>
-                  <p>
-                    カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
-                    レ・マンズ・Mのスクールコンセプトは、<br/>
-                    レ・マンズ・Mのロゴの中にすべて表されています。<br/>
-                    確かな知識と技術で、お客様に施術を行い、ボディケアはもちろんの事、<br/>
-                    暖かさや、心の癒しを、感じて頂けるサロンであり、施術者でありたいという思いを基本に、<br/>
-                    このロゴが出来上がりました。
-                  </p>
-                </div>
-                <div className="school__color">
-                  <h3><strong><span>ローズマゼンダ（❤の色）</span>「成熟」と「収穫」第8チャクラ</strong></h3>
-                  <p>
-                    レッドの情熱とブルーの視野の広さを持っています。<br/>
-                    「今を生きる」レッドは、先の報酬に囚われることなく、今の情熱のままに<br/>
-                    「種まき（能動的アクション）」を起こします。<br/>
-                    逆の質を持つブルーは短絡的にならず、その「種を育て」「収穫を待つ」事が出来ます。<br/>
-                    受け取った収穫はまた「種」になります。<br/>
-                    こうして、一見バラバラな行為を「自分から差し出すこと」で「自分で繋ぎ」<br/>
-                    「より多くの成熟（成果）を得る事ができる」のがローズマゼンダの「成熟」「収穫」なのです。
-                  </p>
-                </div>{/*school__color*/}
-                <div className="school__colorOther">
-                  <h3>レ・マンズ　＝　両手（❤の下の5色）</h3>
-                  <div className="school__colorOther--red">
+              <div className="concept__main has-text-centered">
+                <p className="concept__text">
+                  カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
+                  レ・マンズ・Mのスクールコンセプトは、<br/>
+                  レ・マンズ・Mのロゴの中にすべて表されています。<br/>
+                  確かな知識と技術で、お客様に施術を行い、ボディケアはもちろんの事、<br/>
+                  暖かさや、心の癒しを、感じて頂けるサロンであり、施術者でありたいという思いを基本に、<br/>
+                  このロゴが出来上がりました。
+                </p>
+              </div>
+              <div className="concept__color">
+                <h3><strong><span>ローズマゼンダ（❤の色）</span>「成熟」と「収穫」第8チャクラ</strong></h3>
+                <p>
+                  レッドの情熱とブルーの視野の広さを持っています。<br/>
+                  「今を生きる」レッドは、先の報酬に囚われることなく、今の情熱のままに「種まき（能動的アクション）」を起こします。<br/>
+                  逆の質を持つブルーは短絡的にならず、その「種を育て」「収穫を待つ」事が出来ます。<br/>
+                  受け取った収穫はまた「種」になります。<br/>
+                  こうして、一見バラバラな行為を「自分から差し出すこと」で「自分で繋ぎ」<br/>
+                  「より多くの成熟（成果）を得る事ができる」のがローズマゼンダの「成熟」「収穫」なのです。
+                </p>
+              </div>{/*concept__color*/}
+              <div className="concept__colorOther">
+                <h3 className="has-text-centered is-size-4">レ・マンズ　＝　両手（❤の下の5色）</h3>
+                <div className="concept__colorOther--top is-flex-desktop">
+                  <div className="concept__colorOther--red">
                     <h4><strong><span>❤レッド</span>「火」の色　第1チャクラ</strong></h4>
                     <p>
-                      「火が赤々と燃えるさま」を表しています。
-                      人間の文明は「火により始まる」と言われています。
-                      「火」は古くから、「エネルギー」「パワー」「生命力」をあらわし、
+                      「火が赤々と燃えるさま」を表しています。<br/>
+                      人間の文明は「火により始まる」と言われています。<br/>
+                      「火」は古くから「エネルギー」「パワー」「生命力」を表し、<br/>
                       「人類の進歩（前進）」の礎だったのです。
                     </p>
-                  </div>{/*school__colorOther--red*/}
-                  <div className="school__colorOther--orange">
-                    <h4><strong><span>❤オレンジ</span>「燃え盛る（焚火）」の色　第2チャクラ（五感刺激）</strong></h4>
+                  </div>{/*concept__colorOther--red*/}
+                  <div className="concept__colorOther--orange">
+                    <h4><strong><span>❤オレンジ</span>「燃え盛る(焚火)」の色　第2チャクラ(五感刺激)</strong></h4>
                     <p>
-                      人々は「焚火」の周囲に集い、古代も今も、人々は、火を囲んで語らい、<br/>
+                      人々は「焚火」の周囲に集い、古代も今も、人々は、<br/>
+                      火を囲んで語らい、<br/>
                       簡素な暮らしの中の僅かな時間を楽しみました。<br/>
-                      「刺激的」「楽しい」「社交的」「美味しいもの」を食べる「綺麗なもの」を見る<br/>
-                      新しい分野（人間関係や経験など）を「開拓」するなど、「いつもと違うことをしている自分」<br/>
-                      を楽しむ色です。
+                      「刺激的」「楽しい」「社交的」<br/>
+                      「美味しいもの」を食べる「綺麗なもの」を見る<br/>
+                      新しい分野（人間関係や経験など）を「開拓」するなど、<br/>
+                      「いつもと違うことをしている自分」を楽しむ色です。
                     </p>
-                  </div>{/*school__colorOther--orange*/}
-                  <div className="school__colorOther--yellow">
-                    <h4><strong><span>❤イエロー</span>「太陽」の色　第3チャクラ（精神的刺激）</strong></h4>
+                  </div>{/*concept__colorOther--orange*/}
+                </div>{/*concept__colorOther--top*/}
+                <div className="concept__colorOther--middle is-flex-desktop">
+                  <div className="concept__colorOther--yellow">
+                    <h4><strong><span>❤イエロー</span>「太陽」の色　第3チャクラ(精神的刺激)</strong></h4>
                     <p>
-                      「知性」「知識」を意味します。「知識を探究する」「好奇心をみたす」ことは黄色の「喜び」を<br/>
-                      生み出します。何かを学んだり、知識を増やしたりするのに向いています。<br/>
-                      太陽が放出する「光」は、「知性」も表します。「黄」の語源は火のついた矢！<be/>
+                      「知性」「知識」を意味します。<br/>
+                      「知識を探究する」「好奇心をみたす」<br/>
+                      ことは黄色の「喜び」を生み出します。<br/>
+                      何かを学んだり、知識を増やしたりするのに向いています。<br/>
+                      太陽が放出する「光」は、「知性」も表します。<br/>
+                      「黄」の語源は火のついた矢！<br/>
                       黄色の「知性」は、その光の矢で後世までを照らします。
                     </p>
-                  </div>{/*school__colorOther--yellow*/}
-                  <div className="school__colorOther--green">
-                    <h4><strong><span>❤グリーン</span>「調和」の色　第4チャクラ（ハート）</strong></h4>
+                  </div>{/*concept__colorOther--yellow*/}
+                  <div className="concept__colorOther--green">
+                    <h4><strong><span>❤グリーン</span>「調和」の色　第4チャクラ(ハート)</strong></h4>
                     <p>
-                      緑は「群居性」のある「植物」の色。「心のまま」に「自由」に「変化・成長」を遂げながら<br/>
-                      周囲の人とも「調和」が取れていれば「リラックス」の中で「自己成長」を感じます。<br/>
+                      緑は「群居性」のある「植物」の色。「心のまま」に「自由」に<br />
+                      「変化・成長」を遂げながら周囲の人とも「調和」が取れていれば<br/>
+                      「リラックス」の中で「自己成長」を感じます。<br/>
                       緑色は「対人関係と自己の調和」をサポートしてくれる色です。
                     </p>
-                  </div>{/*school__colorOther--green*/}
-                </div>{/*school__colorOther*/}
-
+                  </div>{/*concept__colorOther--green*/}
+                </div>{/*concept__colorOter--middle*/}
+                <div className="concept__colorOther--blue">
+                  <h4><strong><span>❤ブルー</span>「受容性」の色　第5チャクラ(精神性・哲学)</strong></h4>
+                  <p>
+                    青は「言葉による自己表現」「受け入れて手放す」青のエネルギーは<br/>
+                    「自分の想いを語る」ための内外のサポートをしてくれます。<br/>
+                    青の大きなテーマ。「女性性・包み込む事・受け入れる」<br/>
+                    青の2つの象徴的側面「女性性の需要」「男性性の権威」<br/>
+                    一見相反する2つの意味はどちらも等しく青の側面なのです。
+                  </p>
+                </div>{/*concept__colorOther--blue*/}
+              </div>{/*concept__colorOther*/}
             </div>
           </section>
-
+          <section className="school is-fullheight">
+            <h2 className="title has-text-centered">≪SCHOOL≫</h2>
+            <div className="school__main container">
+              
+            </div>{/*school*/}
+          </section>
           <section className="menu is-fullheight">
-            <h2 className="title has-text-centered">MENU</h2>
+            <h2 className="title has-text-centered">≪MENU≫</h2>
             <div className="container">
               <div className="menu__main">
                 <div className="menu__contents--back">
                   <table className="menu__contents">
-                    <tr>
-                      <th colspan="3" rowspan="3"><strong>経絡リンパケアトリートメント</strong></th>
-                      <td className="minit">40分</td>
-                      <td className="price">4,500円</td>
-                    </tr>
-                    <tr>
-                      <td className="minit">60分</td>
-                      <td className="price">5,500円</td>
-                    </tr>
-                    <tr>
-                      <td>80分</td>
-                      <td>7,500円</td>
-                    </tr>
-                    <tr className="menu__contents">
-                      <th rowspan="4">痩身</th> 
-                      <th rowspan="2">上半身 or 下半身</th>
-                      <th>（ 1回）</th>
-                      <td colspan="2">5,000円</td>
-                    </tr>
-                    <tr>
-                      <th>（12回）</th>
-                      <td colspan="2">45,000円</td>
-                    </tr>
-                    <tr>
-                      <th rowspan="2">全身</th>
-                      <th>（ 1回）</th>
-                      <td colspan="2">9,000円</td>
-                    </tr>
-                    <tr>
-                      <th>（12回）</th>
-                      <td colspan="2">75,000円</td>
-                    </tr>
-                    <tr>
-                      <th colspan="3">フェイス（超音波付）</th>
-                      <td colspan="2">3,000円</td>
-                    </tr>
-                    <tr>
-                      <td colspan="3">プラスパック</td>
-                      <td colspan="2">500円</td>
-                    </tr>
-                    <tr>
-                      <th colspan="3">超音波（セルフ）</th>
-                      <td colspan="2">500円</td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <th className="menu__title"colSpan="3" rowSpan="3"><strong>経絡リンパケアトリートメント</strong></th>
+                        <td className="menu__price">40分</td>
+                        <td className="menu__price">4,500円</td>
+                      </tr>
+                      <tr>
+                        <td className="menu__price">60分</td>
+                        <td className="menu__price">5,500円</td>
+                      </tr>
+                      <tr>
+                        <td className="menu__price">80分</td>
+                        <td className="menu__price">7,500円</td>
+                      </tr>
+                      <tr className="menu__contents">
+                        <th className="menu__title"rowSpan="4">痩身</th> 
+                        <th className="menu__title"rowSpan="2">上半身 or 下半身</th>
+                        <th className="menu__title">（ 1回）</th>
+                        <td className="menu__price" colSpan="2">5,000円</td>
+                      </tr>
+                      <tr>
+                        <th className="menu__title">（12回）</th>
+                        <td className="menu__price" colSpan="2">45,000円</td>
+                      </tr>
+                      <tr>
+                        <th className="menu__title"rowSpan="2">全身</th>
+                        <th className="menu__title">（ 1回）</th>
+                        <td className="menu__price" colSpan="2">9,000円</td>
+                      </tr>
+                      <tr>
+                        <th className="menu__title">（12回）</th>
+                        <td className="menu__price" colSpan="2">75,000円</td>
+                      </tr>
+                      <tr>
+                        <th className="menu__title"colSpan="3">フェイス（超音波付）</th>
+                        <td className="menu__price" colSpan="2">3,000円</td>
+                      </tr>
+                      <tr>
+                        <td className="menu__price" colSpan="3">プラスパック</td>
+                        <td className="menu__price" colSpan="2">500円</td>
+                      </tr>
+                      <tr>
+                        <th className="menu__title"colSpan="3">超音波（セルフ）</th>
+                        <td className="menu__price" colSpan="2">500円</td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
 
@@ -305,15 +404,15 @@ export default class IndexPage extends React.Component {
           </section>
 
           <section className="tel back">
-            <h2 className="title has-text-centered">CONTACT</h2>
+            <h2 className="title has-text-centered">≪CONTACT≫</h2>
             <p className="tel-number is-size-3 has-text-centered">090-8245-3516</p>
           </section>
 
 
           <section className="access is-fullheight">
-            <h2 className="has-text-centered title">ACCESS</h2>
-            <div className="container">
-              <p className="is-size-5">
+            <h2 className="has-text-centered title">≪ACCESS≫</h2>
+            <div className="container access__address">
+              <p className="is-size-4-desktop is-size-5-touch">
                 〒 721-0963<br/>
                 広島県福山市南手城町3丁目7番9号
               </p>
@@ -331,9 +430,6 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
         </div>
-        <footer className="footer">
-
-        </footer>
       </div>
     );
   }

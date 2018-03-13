@@ -35,37 +35,18 @@ body
 section
   padding: 100px 0
 
-td
-  text-align: right!important
-  padding: 0 1rem 1rem 0
-  +touch
-    width: 100%
-    display: block
-    text-align: center!important
-
-th
-  text-align: left
-  padding-right: 1rem
-  +touch
-    width: 100%
-    display: block
-    text-align: center!important
-
-table
-  margin: 0 auto
-  font-size: 1.5rem
-  +touch
-    font-size: 1.3rem
+h2
+  margin-bottom: 4rem!important
 
 // title
 
 .yuba
-  background-image: url("../img/shop6.jpg"),url("../img/shop5.jpg")
+  background-image: url("../img/shop_1.jpg"),url("../img/shop_2.jpg")
   background-position: right,left
   background-repeat: no-repeat
   padding: 0
   +touch
-    background-image: url("../img/shop6.jpg")
+    background-image: url("../img/shop_1.jpg")
     width: 100%
 
 .yuba2
@@ -119,39 +100,52 @@ html.has-navbar-fixed-top
       display: block
       width: 100%
       padding: 10px
+      text-align: center
 
 .greeting
+  &__concept
+    margin: 1rem 0.5rem
   &__main
-    padding: 2rem 3rem
+    padding: 2rem 0.5rem
   &__image
     border-radius: 50%
   &__text
+    line-height: 2
     & strong
       color: #e4007f
 
 // introduction
 .introduction
+  &__name
+    margin: 1rem 0
   &__masako
     border-radius: 50%
+    padding: 2rem
+    width: 25rem
     +touch
-      margin-left: calc(50% - 6rem)
+      margin-left: calc(50% - 12rem)
+    &--text
+      +touch
+        border-bottom: 1px solid #000000
+    &--title
+      padding: 0 1rem 1rem 0
+      +touch
+        width: 100%
+        display: block
+        border-top: 1px solid #000000
+        text-align: center!important
+    &--contents
+      +touch
+        width: 100%
+        display: block
+        text-align: center!important
+        font-size: 1rem
   &__contents
     margin: 0 auto
+  &__next--text
+    text-align: right
 
 .school
-
-.menu
-  &__contents
-    &--back
-      background: #ffffff
-      border-radius: 5rem
-      +desktop
-        padding: 5rem
-        width: 50rem
-        margin: 0 auto
-      +touch
-        padding: 2rem
-        margin: 1rem
 
 //privilege
 .privilege
@@ -162,4 +156,115 @@ html.has-navbar-fixed-top
     padding: 1rem
   &__third
     padding: 1rem
+
+//concept
+.concept
+  & h3
+    +touch
+      font-size: 1.2rem!important
+  &__text
+    line-height: 2rem
+    margin: 0.5rem
+  &__main
+    & span
+      color: #e4007f
+  &__color
+    margin: 1rem
+    padding: 1rem
+    border: 0.5rem solid #e4007f
+    border-radius: 5px
+    & span
+      color: #e4007f
+      font-size: 1.5rem
+  &__colorOther
+    &--red
+      margin: 1rem
+      padding: 1rem
+      border: 0.5rem solid #DF0101
+      border-radius: 5px
+      +desktop
+        width: 45rem        
+      & span
+        color: #DF0101
+        font-size: 1.5rem
+    &--orange
+      margin: 1rem
+      padding: 1rem
+      border: 0.5rem solid #DF7401
+      border-radius: 5px
+      +desktop
+        width: 45rem        
+      & span
+        color: #DF7401
+        font-size: 1.5rem
+    &--yellow
+      margin: 1rem
+      padding: 1rem
+      border: 0.5rem solid #FFBF00
+      border-radius: 5px
+      +desktop
+        width: 45rem        
+      & span
+        color: #FFBF00
+        font-size: 1.5rem
+    &--green
+      margin: 1rem
+      padding: 1rem
+      border: 0.5rem solid #0B610B
+      border-radius: 5px
+      +desktop
+        width: 45rem        
+      & span
+        color: #0B610B
+        font-size: 1.5rem
+    &--blue
+      margin: 1rem
+      padding: 1rem
+      border: 0.5rem solid #0101DF
+      border-radius: 5px
+      +desktop
+        width: 45rem        
+      & span
+        color: #0101DF
+        font-size: 1.5rem
+
+//menu
+.menu
+  &__contents
+    margin: 0 auto
+    font-size: 1.5rem
+    +touch
+      font-size: 1.3rem
+    &--back
+      background: #ffffff
+      border-radius: 5rem
+      +desktop
+        padding: 2rem 5rem
+        width: 50rem
+        margin: 0 auto
+      +touch
+        padding: 2rem
+        margin: 1rem
+  &__title
+    text-align: left
+    padding-right: 1rem
+    +touch
+      width: 100%
+      display: block
+      text-align: center!important
+  &__price
+    text-align: right!important
+    padding: 0 1rem 1rem 0
+    +touch
+      width: 100%
+      display: block
+      text-align: center!important
+
+//access
+.access
+  &__address
+    padding: 2rem 0
+    & p
+      text-align: center
+
 
