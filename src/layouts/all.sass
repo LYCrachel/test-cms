@@ -104,13 +104,33 @@ html.has-navbar-fixed-top
 
 .greeting
   &__concept
-    margin: 1rem 0.5rem
+    margin: 1rem auto
+    +desktop
+      width: 75%
+    & figure
+      +desktop
+        width: 30%
+  &__contents
+    margin: 2rem 0
   &__main
     padding: 2rem 0.5rem
   &__image
-    border-radius: 50%
+    border-radius: 5px
+    width: 100%
   &__text
     line-height: 2
+    &--first
+      +desktop
+        width: 70%
+        padding: 1rem 2.3rem
+    &--second
+      +desktop
+        width: 70%
+        padding: 1rem 2.3rem
+    &--third
+      +desktop
+        width: 70%
+        padding: 1rem 2.3rem
     & strong
       color: #e4007f
 
@@ -129,11 +149,13 @@ html.has-navbar-fixed-top
         border-bottom: 1px solid #000000
     &--title
       padding: 0 1rem 1rem 0
+      margin-top: 10px
       +touch
         width: 100%
         display: block
         border-top: 1px solid #000000
         text-align: center!important
+        padding-top: 10px
     &--contents
       +touch
         width: 100%
@@ -159,22 +181,36 @@ html.has-navbar-fixed-top
 
 //concept
 .concept
+  &__image
+    +desktop
+      width: 50%
+    & img
+      +desktop
+        width: 70%
+    & figure
+      +desktop
+        margin-left: calc(50% - 10rem)
   & h3
     +touch
       font-size: 1.2rem!important
   &__text
-    line-height: 2rem
-    margin: 0.5rem
+    +desktop
+      width: 50%
+    &--content
+      line-height: 2rem
+      margin: 0.5rem
   &__main
+    margin: 0 auto
+    width: 100%
     & span
-      color: #e4007f
+      color: #B4045F
   &__color
     margin: 1rem
     padding: 1rem
-    border: 0.5rem solid #e4007f
+    border: 0.5rem solid #B4045F
     border-radius: 5px
     & span
-      color: #e4007f
+      color: #B4045F
       font-size: 1.5rem
   &__colorOther
     &--red
@@ -223,7 +259,7 @@ html.has-navbar-fixed-top
       border: 0.5rem solid #0101DF
       border-radius: 5px
       +desktop
-        width: 45rem        
+        width: 97.5%       
       & span
         color: #0101DF
         font-size: 1.5rem

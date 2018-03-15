@@ -88,18 +88,17 @@ export default class IndexPage extends React.Component {
                 この「体の中から不要な老廃物などを排出し、キレイになる特別なメソット」<br/>
                 で、あなたの美しさにさらなる磨きをかけるお手伝いをいたします。
               </p>
-              <div className="container greeting__concept">
-                <div className="is-flex-desktop">
+              <div className="greeting__concept">
+                <div className="greeting__contents is-flex-desktop">
                   <figure>
                     <img
                       className="greeting__image"
                       src={logologo}
                       alt="logologo"
-                      style={{ width: "200px" }}
                     />
                   </figure>
-                  <div className="greeting__text--first">
-                    <h4 className="is-size-5">Consept1　優しさの溢れる手</h4>
+                  <div className="greeting__text greeting__text--first">
+                    <h4 className="is-size-5"><strong>Consept1　優しさの溢れる手</strong></h4>
                     <p className="is-size-6">
                       「レ・マンス(Les Mains)」とは、<br/>
                       フランス語で「両手」を意味します。<br/>
@@ -108,17 +107,16 @@ export default class IndexPage extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="is-flex-desktop">
+                <div className="greeting__contents is-flex-desktop">
                   <figure>
                     <img
                       className="greeting__image"
                       src={space}
                       alt="space"
-                      style={{ width: "200px" }}
                     />
                   </figure>
-                  <div className="greeting__text--second">
-                    <h4 className="is-size-5">Concept2　お客様と丁寧に向き合う</h4>
+                  <div className="greeting__text greeting__text--second">
+                    <h4 className="is-size-5"><strong>Concept2　お客様と丁寧に向き合う</strong></h4>
                     <p className="is-size-6">
                       2006年11月のオープン以来、もっとも大切にしているのは、<br/>
                       「お客様一人ひとりの体質や体調、ご希望に合わせた最適なトリートメントの提供」。<br/>
@@ -128,17 +126,16 @@ export default class IndexPage extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="is-flex-desktop">
+                <div className="greeting__contents is-flex-desktop">
                   <figure>
                     <img
                       className="greeting__image"
                       src={counseling}
                       alt="counseling"
-                      style={{ width: "200px" }}
                     />
                   </figure>
-                  <div className="greeting__text--third">
-                    <h4 className="is-size-5">Concept3　心と体がゆったりする時空間づくり</h4>
+                  <div className="greeting__text greeting__text--third">
+                    <h4 className="is-size-5"><strong>Concept3　心と体がゆったりする時空間づくり</strong></h4>
                     <p className="is-size-6">
                       オリジナルのメソッドによるトリートメントは、ゆったりとした時間の流れの中で、<br />
                       優しい音楽や照明の灯り、心が柔らかくなる香りなど、<br />
@@ -229,15 +226,27 @@ export default class IndexPage extends React.Component {
           <section className="concept back is-fullheight">
             <h2 className="title has-text-centered">≪SCHOOL CONCEPT≫</h2>
             <div className="container">
-              <div className="concept__main has-text-centered">
-                <p className="concept__text">
-                  カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
-                  レ・マンズ・Mのスクールコンセプトは、<br/>
-                  レ・マンズ・Mのロゴの中にすべて表されています。<br/>
-                  確かな知識と技術で、お客様に施術を行い、ボディケアはもちろんの事、<br/>
-                  暖かさや、心の癒しを、感じて頂けるサロンであり、施術者でありたいという思いを基本に、<br/>
-                  このロゴが出来上がりました。
-                </p>
+              <div className="concept__main is-flex-desktop">
+                <div className="concept__image">
+                  <figure>
+                    <img
+                      src={logologo}
+                      alt="logologo"
+                    />
+                  </figure>
+                </div>
+                <div className="concept__text">
+                  <p className="concept__text--content">
+                    カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
+                    レ・マンズ・Mのスクールコンセプトは、<br/>
+                    レ・マンズ・Mのロゴの中にすべて表されています。<br/>
+                    確かな知識と技術で、お客様に施術を行い、<br/>
+                    ボディケアはもちろんの事、<br/>
+                    暖かさや、心の癒しを、感じて頂けるサロンであり、<br/>
+                    施術者でありたいという思いを基本に、<br/>
+                    このロゴが出来上がりました。
+                  </p>
+                </div>
               </div>
               <div className="concept__color">
                 <h3><strong><span>ローズマゼンダ（❤の色）</span>「成熟」と「収穫」第8チャクラ</strong></h3>
@@ -301,10 +310,8 @@ export default class IndexPage extends React.Component {
                 <div className="concept__colorOther--blue">
                   <h4><strong><span>❤ブルー</span>「受容性」の色　第5チャクラ(精神性・哲学)</strong></h4>
                   <p>
-                    青は「言葉による自己表現」「受け入れて手放す」青のエネルギーは<br/>
-                    「自分の想いを語る」ための内外のサポートをしてくれます。<br/>
-                    青の大きなテーマ。「女性性・包み込む事・受け入れる」<br/>
-                    青の2つの象徴的側面「女性性の需要」「男性性の権威」<br/>
+                    青は「言葉による自己表現」「受け入れて手放す」青のエネルギーは「自分の想いを語る」ための内外のサポートをしてくれます。<br/>
+                    青の大きなテーマ。「女性性・包み込む事・受け入れる」青の2つの象徴的側面「女性性の需要」「男性性の権威」<br/>
                     一見相反する2つの意味はどちらも等しく青の側面なのです。
                   </p>
                 </div>{/*concept__colorOther--blue*/}
