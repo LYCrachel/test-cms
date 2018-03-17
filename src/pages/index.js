@@ -77,7 +77,7 @@ export default class IndexPage extends React.Component {
           <section className="greeting back is-fullheight">
             <h2 className="title has-text-centered">≪SALON CONCEPT≫</h2>
             <div className="greeting__main">
-              <p className="is-size-5 has-text-centered greeting__text">
+              <p className="is-size-6-desktop is-size-7-touch has-text-centered greeting__text">
                 レ・マンズ・M (エム)では、<br/>
                 ・東洋医学より、経絡・経穴（ツボ）<br/>
                 ・西洋医学より、リンパドレナージュ<br/>
@@ -98,8 +98,8 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text greeting__text--first">
-                    <h4 className="is-size-5"><strong>Consept1　優しさの溢れる手</strong></h4>
-                    <p className="is-size-6">
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Consept1　優しさの溢れる手</strong></h4>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       「レ・マンス(Les Mains)」とは、<br/>
                       フランス語で「両手」を意味します。<br/>
                       暖かく、ふくよかな手で包まれた時の<br/>
@@ -116,8 +116,8 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text greeting__text--second">
-                    <h4 className="is-size-5"><strong>Concept2　お客様と丁寧に向き合う</strong></h4>
-                    <p className="is-size-6">
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept2　お客様と丁寧に向き合う</strong></h4>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       2006年11月のオープン以来、もっとも大切にしているのは、<br/>
                       「お客様一人ひとりの体質や体調、ご希望に合わせた最適なトリートメントの提供」。<br/>
                       自らの体験を通して「これ！」と思う技術を習得し、<br/>
@@ -135,8 +135,8 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text greeting__text--third">
-                    <h4 className="is-size-5"><strong>Concept3　心と体がゆったりする時空間づくり</strong></h4>
-                    <p className="is-size-6">
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept3　心と体がゆったりする時空間づくり</strong></h4>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       オリジナルのメソッドによるトリートメントは、ゆったりとした時間の流れの中で、<br />
                       優しい音楽や照明の灯り、心が柔らかくなる香りなど、<br />
                       五感に心地よい心と体への癒しの空間にて体感いただけます。<br />
@@ -159,7 +159,7 @@ export default class IndexPage extends React.Component {
                     <p className="is-size-3 has-text-centered">長岡 末佐子</p>
                     <p className="is-size-4 has-text-centered">(ながおか まさこ)</p>
                   </div>
-                  <table className="introduction__masako--text has-text-centered is-size-5">
+                  <table className="introduction__masako--text has-text-centered is-size-6">
                     <tbody>
                       <tr className="introduction__masako--sell">
                         <th className="introduction__masako--title">2005年 5月</th>
@@ -236,7 +236,7 @@ export default class IndexPage extends React.Component {
                   </figure>
                 </div>
                 <div className="concept__text">
-                  <p className="concept__text--content">
+                  <p className="is-size-6-desktop is-size-7-touch concept__text--content">
                     カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
                     レ・マンズ・Mのスクールコンセプトは、<br/>
                     レ・マンズ・Mのロゴの中にすべて表されています。<br/>
@@ -250,7 +250,7 @@ export default class IndexPage extends React.Component {
               </div>
               <div className="concept__color">
                 <h3><strong><span>ローズマゼンダ（❤の色）</span>「成熟」と「収穫」第8チャクラ</strong></h3>
-                <p>
+                <p className="is-size-6-desktop is-size-7-touch">
                   レッドの情熱とブルーの視野の広さを持っています。<br/>
                   「今を生きる」レッドは、先の報酬に囚われることなく、今の情熱のままに「種まき（能動的アクション）」を起こします。<br/>
                   逆の質を持つブルーは短絡的にならず、その「種を育て」「収穫を待つ」事が出来ます。<br/>
@@ -260,11 +260,11 @@ export default class IndexPage extends React.Component {
                 </p>
               </div>{/*concept__color*/}
               <div className="concept__colorOther">
-                <h3 className="has-text-centered is-size-4">レ・マンズ　＝　両手（❤の下の5色）</h3>
+                <h3 className="has-text-centered is-size-4">レ・マンズ　＝　両手(❤の下の5色)</h3>
                 <div className="concept__colorOther--top is-flex-desktop">
                   <div className="concept__colorOther--red">
                     <h4><strong><span>❤レッド</span>「火」の色　第1チャクラ</strong></h4>
-                    <p>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       「火が赤々と燃えるさま」を表しています。<br/>
                       人間の文明は「火により始まる」と言われています。<br/>
                       「火」は古くから「エネルギー」「パワー」「生命力」を表し、<br/>
@@ -273,7 +273,7 @@ export default class IndexPage extends React.Component {
                   </div>{/*concept__colorOther--red*/}
                   <div className="concept__colorOther--orange">
                     <h4><strong><span>❤オレンジ</span>「燃え盛る(焚火)」の色　第2チャクラ(五感刺激)</strong></h4>
-                    <p>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       人々は「焚火」の周囲に集い、古代も今も、人々は、<br/>
                       火を囲んで語らい、<br/>
                       簡素な暮らしの中の僅かな時間を楽しみました。<br/>
@@ -287,7 +287,7 @@ export default class IndexPage extends React.Component {
                 <div className="concept__colorOther--middle is-flex-desktop">
                   <div className="concept__colorOther--yellow">
                     <h4><strong><span>❤イエロー</span>「太陽」の色　第3チャクラ(精神的刺激)</strong></h4>
-                    <p>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       「知性」「知識」を意味します。<br/>
                       「知識を探究する」「好奇心をみたす」<br/>
                       ことは黄色の「喜び」を生み出します。<br/>
@@ -299,7 +299,7 @@ export default class IndexPage extends React.Component {
                   </div>{/*concept__colorOther--yellow*/}
                   <div className="concept__colorOther--green">
                     <h4><strong><span>❤グリーン</span>「調和」の色　第4チャクラ(ハート)</strong></h4>
-                    <p>
+                    <p className="is-size-6-desktop is-size-7-touch">
                       緑は「群居性」のある「植物」の色。「心のまま」に「自由」に<br />
                       「変化・成長」を遂げながら周囲の人とも「調和」が取れていれば<br/>
                       「リラックス」の中で「自己成長」を感じます。<br/>
@@ -309,7 +309,7 @@ export default class IndexPage extends React.Component {
                 </div>{/*concept__colorOter--middle*/}
                 <div className="concept__colorOther--blue">
                   <h4><strong><span>❤ブルー</span>「受容性」の色　第5チャクラ(精神性・哲学)</strong></h4>
-                  <p>
+                  <p className="is-size-6-desktop is-size-7-touch">
                     青は「言葉による自己表現」「受け入れて手放す」青のエネルギーは「自分の想いを語る」ための内外のサポートをしてくれます。<br/>
                     青の大きなテーマ。「女性性・包み込む事・受け入れる」青の2つの象徴的側面「女性性の需要」「男性性の権威」<br/>
                     一見相反する2つの意味はどちらも等しく青の側面なのです。
