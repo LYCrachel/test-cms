@@ -333,35 +333,28 @@ export default class IndexPage extends React.Component {
                     <tbody>
                       <tr>
                         <th className="menu__title"colSpan="3" rowSpan="3"><strong>経絡リンパケアトリートメント</strong></th>
-                        <td className="menu__price">40分</td>
-                        <td className="menu__price">4,500円</td>
+                        <td className="menu__price">40分　4,500円</td>
                       </tr>
                       <tr>
-                        <td className="menu__price">60分</td>
-                        <td className="menu__price">5,500円</td>
+                        <td className="menu__price">60分　5,500円</td>
                       </tr>
                       <tr>
-                        <td className="menu__price">80分</td>
-                        <td className="menu__price">7,500円</td>
+                        <td className="menu__price">80分　7,500円</td>
                       </tr>
                       <tr className="menu__contents">
                         <th className="menu__title"rowSpan="4">痩身</th> 
                         <th className="menu__title"rowSpan="2">上半身 or 下半身</th>
-                        <th className="menu__title">（ 1回）</th>
-                        <td className="menu__price" colSpan="2">5,000円</td>
+                        <td className="menu__price" colSpan="2">（ 1回）　5,000円</td>
                       </tr>
                       <tr>
-                        <th className="menu__title">（12回）</th>
-                        <td className="menu__price" colSpan="2">45,000円</td>
+                        <td className="menu__price" colSpan="2">（12回） 45,000円</td>
                       </tr>
                       <tr>
                         <th className="menu__title"rowSpan="2">全身</th>
-                        <th className="menu__title">（ 1回）</th>
-                        <td className="menu__price" colSpan="2">9,000円</td>
+                        <td className="menu__price" colSpan="2">（ 1回）　9,000円</td>
                       </tr>
                       <tr>
-                        <th className="menu__title">（12回）</th>
-                        <td className="menu__price" colSpan="2">75,000円</td>
+                        <td className="menu__price" colSpan="2">（12回） 75,000円</td>
                       </tr>
                       <tr>
                         <th className="menu__title"colSpan="3">フェイス（超音波付）</th>
