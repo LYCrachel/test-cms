@@ -8,6 +8,8 @@ import counseling from "../img/shop_2.jpg";
 import space from "../img/shop_1.jpg";
 import title from "../img/レマンズ.gif";
 import logologo from "../img/logo.gif";
+import photo from "../img/サロン.jpg";
+
 
 export default class IndexPage extends React.Component {
   handleScriptLoad() {
@@ -78,32 +80,35 @@ export default class IndexPage extends React.Component {
             <h2 className="title has-text-centered">≪SALON CONCEPT≫</h2>
             <div className="greeting__main">
               <p className="is-size-6-desktop is-size-7-touch has-text-centered greeting__text">
-                レ・マンズ・M (エム)では、<br/>
-                ・東洋医学より、経絡・経穴（ツボ）<br/>
-                ・西洋医学より、リンパドレナージュ<br/>
-                ・インド伝承医学より、アーユルヴェーダ。<br/>
-                それぞれの施術を融合し<br/>
-                「レ・マンズ・M・オリジナルトリートメントメゾット」<br/>
-                を、つくりあげました。<br/>
-                この「体の中から不要な老廃物などを排出し、キレイになる特別なメソット」<br/>
-                で、あなたの美しさにさらなる磨きをかけるお手伝いをいたします。
+                レ・マンズ・M (エム)では、
+                <span>・東洋医学より、経絡・経穴（ツボ）</span>
+                <span>・西洋医学より、リンパドレナージュ</span>
+                <span>・インド伝承医学より、アーユルヴェーダ。<br/></span>
+                <span>それぞれの施術を融合し</span>
+                <span>「レ・マンズ・M・オリジナルトリートメントメゾット」</span>
+                <span> を、つくりあげました。<br /></span>
+                <span>この「体の中から不要な老廃物などを排出し、</span>
+                <span>キレイになる特別なメソット」で、</span>
+                <span>あなたの美しさにさらなる磨きをかける</span>
+                <span>お手伝いをいたします。</span>
               </p>
               <div className="greeting__concept">
                 <div className="greeting__contents is-flex-desktop">
                   <figure>
                     <img
                       className="greeting__image"
-                      src={logologo}
-                      alt="logologo"
+                      src={photo}
+                      alt="photo"
                     />
                   </figure>
-                  <div className="greeting__text greeting__text--first">
-                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Consept1　優しさの溢れる手</strong></h4>
+                  <div className="greeting__text greeting__text--first has-text-centered-touch">
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Consept1　<span>優しさの溢れる手</span></strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
-                      「レ・マンス(Les Mains)」とは、<br/>
-                      フランス語で「両手」を意味します。<br/>
-                      暖かく、ふくよかな手で包まれた時の<br/>
-                      あの優しい感覚をトリートメントとサロンに活かしています。<br/>
+                      「レ・マンス(Les Mains)」とは、
+                      <span>フランス語で「両手」を意味します。<br /></span>
+                      暖かく、ふくよかな手で包まれた時の
+                      <span>あの優しい感覚をトリートメントと<br/></span>
+                      <span>サロンに活かしています。</span>
                     </p>
                   </div>
                 </div>
@@ -115,11 +120,11 @@ export default class IndexPage extends React.Component {
                       alt="space"
                     />
                   </figure>
-                  <div className="greeting__text greeting__text--second">
-                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept2　お客様と丁寧に向き合う</strong></h4>
+                  <div className="greeting__text greeting__text--second has-text-centered-touch">
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept2　<span>お客様と丁寧に向き合う</span></strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
-                      2006年11月のオープン以来、もっとも大切にしているのは、<br/>
-                      「お客様一人ひとりの体質や体調、ご希望に合わせた最適なトリートメントの提供」。<br/>
+                      2006年11月のオープン以来、<span>もっとも大切にしているのは、<br/></span>
+                      「お客様一人ひとりの体質や体調、<span>ご希望に合わせた最適なトリートメントの提供」。<br/></span>
                       自らの体験を通して「これ！」と思う技術を習得し、<br/>
                       磨き続けた中から生まれたオリジナルのメソットで、<br/>
                       お客様の美と健康の目的に合わせてサポートいたします。<br/>
@@ -134,12 +139,12 @@ export default class IndexPage extends React.Component {
                       alt="counseling"
                     />
                   </figure>
-                  <div className="greeting__text greeting__text--third">
-                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept3　心と体がゆったりする時空間づくり</strong></h4>
+                  <div className="greeting__text greeting__text--third has-text-centered-touch">
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept3　<span>心と体がゆったりする時空間づくり</span></strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
-                      オリジナルのメソッドによるトリートメントは、ゆったりとした時間の流れの中で、<br />
+                      オリジナルのメソッドによるトリートメントは、<span>ゆったりとした時間の流れの中で、<br /></span>
                       優しい音楽や照明の灯り、心が柔らかくなる香りなど、<br />
-                      五感に心地よい心と体への癒しの空間にて体感いただけます。<br />
+                      五感に心地よい心と体への<span>癒しの空間にて体感いただけます。</span>
                     </p>
                   </div>
                 </div>
@@ -156,10 +161,10 @@ export default class IndexPage extends React.Component {
                 </figure>
                 <div className="introduction__masako-info">
                   <div className="introduction__name">
-                    <p className="is-size-3 has-text-centered">長岡 末佐子</p>
-                    <p className="is-size-4 has-text-centered">(ながおか まさこ)</p>
+                    <p className="is-size-3-desktop is-size-4-touch has-text-centered">長岡 末佐子</p>
+                    <p className="is-size-4-desktop is-size-5-touch has-text-centered">(ながおか まさこ)</p>
                   </div>
-                  <table className="introduction__masako--text has-text-centered is-size-6">
+                  <table className="introduction__masako--text has-text-centered is-size-6-desktop is-size-7-touch">
                     <tbody>
                       <tr className="introduction__masako--sell">
                         <th className="introduction__masako--title">2005年 5月</th>
@@ -223,7 +228,7 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
 
-          <section className="concept back is-fullheight">
+          <section className="concept back is-fullheight  has-text-centered-touch">
             <h2 className="title has-text-centered">≪SCHOOL CONCEPT≫</h2>
             <div className="container">
               <div className="concept__main is-flex-desktop">
@@ -237,82 +242,82 @@ export default class IndexPage extends React.Component {
                 </div>
                 <div className="concept__text">
                   <p className="is-size-6-desktop is-size-7-touch concept__text--content">
-                    カラーセラピーで見る、<span>レ・マンズ・M</span>のコンセプト！<br/>
-                    レ・マンズ・Mのスクールコンセプトは、<br/>
-                    レ・マンズ・Mのロゴの中にすべて表されています。<br/>
-                    確かな知識と技術で、お客様に施術を行い、<br/>
-                    ボディケアはもちろんの事、<br/>
+                    カラーセラピーで見る、レ・マンズ・Mのコンセプト！<br/>
+                    レ・マンズ・Mのスクールコンセプトは、
+                    <span>レ・マンズ・Mのロゴの中にすべて表されています。<br /></span>
+                    確かな知識と技術で、お客様に施術を行い、
+                    <span>ボディケアはもちろんの事、<br/></span>
                     暖かさや、心の癒しを、感じて頂けるサロンであり、<br/>
-                    施術者でありたいという思いを基本に、<br/>
-                    このロゴが出来上がりました。
+                    施術者でありたいという思いを基本に、
+                    <span>このロゴが出来上がりました。</span>
                   </p>
                 </div>
               </div>
               <div className="concept__color">
-                <h3><strong><span>ローズマゼンダ（❤の色）</span>「成熟」と「収穫」第8チャクラ</strong></h3>
+                <h3><strong><span>ローズマゼンダ</span><span>「❤」の色</span>「成熟」と「収穫」第8チャクラ</strong></h3>
                 <p className="is-size-6-desktop is-size-7-touch">
-                  レッドの情熱とブルーの視野の広さを持っています。<br/>
-                  「今を生きる」レッドは、先の報酬に囚われることなく、今の情熱のままに「種まき（能動的アクション）」を起こします。<br/>
-                  逆の質を持つブルーは短絡的にならず、その「種を育て」「収穫を待つ」事が出来ます。<br/>
+                  レッドの情熱とブルーの視野の広さを<span>持っています。<br/></span>
+                  「今を生きる」レッドは、<span>先の報酬に囚われることなく、</span>今の情熱のままに<span>「種まき（能動的アクション）」</span>を起こします。<br/>
+                  逆の質を持つブルーは短絡的にならず、<span>その「種を育て」「収穫を待つ」</span>事が出来ます。<br/>
                   受け取った収穫はまた「種」になります。<br/>
-                  こうして、一見バラバラな行為を「自分から差し出すこと」で「自分で繋ぎ」<br/>
-                  「より多くの成熟（成果）を得る事ができる」のがローズマゼンダの「成熟」「収穫」なのです。
+                  こうして、一見バラバラな行為を<span>「自分から差し出すこと」で</span>「自分で繋ぎ」<br/>
+                  「より多くの成熟（成果）を得る事ができる」のが<span>ローズマゼンダの</span>「成熟」「収穫」なのです。
                 </p>
               </div>{/*concept__color*/}
               <div className="concept__colorOther">
-                <h3 className="has-text-centered is-size-4">レ・マンズ　＝　両手(❤の下の5色)</h3>
+                <h3 className="has-text-centered is-size-4-desktop is-size-6-touch">レ・マンズ　＝　両手(❤の下の5色)</h3>
                 <div className="concept__colorOther--top is-flex-desktop">
                   <div className="concept__colorOther--red">
-                    <h4><strong><span>❤レッド</span>「火」の色　第1チャクラ</strong></h4>
+                    <h4><strong><span>❤レッド</span><span>「火」の色</span>　第1チャクラ</strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
                       「火が赤々と燃えるさま」を表しています。<br/>
-                      人間の文明は「火により始まる」と言われています。<br/>
+                      人間の文明は「火により始まる」と<span>言われています。<br/></span>
                       「火」は古くから「エネルギー」「パワー」「生命力」を表し、<br/>
                       「人類の進歩（前進）」の礎だったのです。
                     </p>
                   </div>{/*concept__colorOther--red*/}
                   <div className="concept__colorOther--orange">
-                    <h4><strong><span>❤オレンジ</span>「燃え盛る(焚火)」の色　第2チャクラ(五感刺激)</strong></h4>
+                    <h4><strong><span>❤オレンジ</span><span>「燃え盛る(焚火)」の色<br/></span>　第2チャクラ(五感刺激)</strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
-                      人々は「焚火」の周囲に集い、古代も今も、人々は、<br/>
-                      火を囲んで語らい、<br/>
-                      簡素な暮らしの中の僅かな時間を楽しみました。<br/>
+                      人々は「焚火」の周囲に集い、古代も今も、<br/>
+                      人々は、火を囲んで語らい、<br/>
+                      簡素な暮らしの中の僅かな時間を<span>楽しみました。<br/></span>
                       「刺激的」「楽しい」「社交的」<br/>
-                      「美味しいもの」を食べる「綺麗なもの」を見る<br/>
-                      新しい分野（人間関係や経験など）を「開拓」するなど、<br/>
-                      「いつもと違うことをしている自分」を楽しむ色です。
+                      「美味しいもの」を食べる<span>「綺麗なもの」を見る<br/></span>
+                      新しい分野（人間関係や経験など）を<span>「開拓」するなど、<br/></span>
+                      「いつもと違うことをしている自分」<span>を楽しむ色です。</span>
                     </p>
                   </div>{/*concept__colorOther--orange*/}
                 </div>{/*concept__colorOther--top*/}
                 <div className="concept__colorOther--middle is-flex-desktop">
                   <div className="concept__colorOther--yellow">
-                    <h4><strong><span>❤イエロー</span>「太陽」の色　第3チャクラ(精神的刺激)</strong></h4>
+                    <h4><strong><span>❤イエロー</span><span>「太陽」の色</span>　第3チャクラ(精神的刺激)</strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
                       「知性」「知識」を意味します。<br/>
-                      「知識を探究する」「好奇心をみたす」<br/>
-                      ことは黄色の「喜び」を生み出します。<br/>
-                      何かを学んだり、知識を増やしたりするのに向いています。<br/>
-                      太陽が放出する「光」は、「知性」も表します。<br/>
+                      「知識を探究する」「好奇心をみたす」ことは<br/>
+                      黄色の「喜び」を生み出します。<br/>
+                      何かを学んだり、<span>知識を増やしたりするのに向いています。<br/></span>
+                      太陽が放出する「光」は、<span>「知性」も表します。<br/></span>
                       「黄」の語源は火のついた矢！<br/>
-                      黄色の「知性」は、その光の矢で後世までを照らします。
+                      黄色の「知性」は、<span>その光の矢で後世までを照らします。</span>
                     </p>
                   </div>{/*concept__colorOther--yellow*/}
                   <div className="concept__colorOther--green">
-                    <h4><strong><span>❤グリーン</span>「調和」の色　第4チャクラ(ハート)</strong></h4>
+                    <h4><strong><span>❤グリーン</span><span>「調和」の色</span>　第4チャクラ(ハート)</strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
-                      緑は「群居性」のある「植物」の色。「心のまま」に「自由」に<br />
-                      「変化・成長」を遂げながら周囲の人とも「調和」が取れていれば<br/>
-                      「リラックス」の中で「自己成長」を感じます。<br/>
-                      緑色は「対人関係と自己の調和」をサポートしてくれる色です。
+                      緑は「群居性」のある「植物」の色。<span>「心のまま」に「自由」に<br /></span>
+                      「変化・成長」を遂げながら周囲の人とも<span>「調和」が取れていれば<br/></span>
+                      「リラックス」の中で<span>「自己成長」を感じます。<br/></span>
+                      緑色は「対人関係と自己の調和」を<span>サポートしてくれる色です。</span>
                     </p>
                   </div>{/*concept__colorOther--green*/}
                 </div>{/*concept__colorOter--middle*/}
                 <div className="concept__colorOther--blue">
-                  <h4><strong><span>❤ブルー</span>「受容性」の色　第5チャクラ(精神性・哲学)</strong></h4>
+                  <h4><strong><span>❤ブルー</span><span>「受容性」の色</span>　第5チャクラ(精神性・哲学)</strong></h4>
                   <p className="is-size-6-desktop is-size-7-touch">
-                    青は「言葉による自己表現」「受け入れて手放す」青のエネルギーは「自分の想いを語る」ための内外のサポートをしてくれます。<br/>
-                    青の大きなテーマ。「女性性・包み込む事・受け入れる」青の2つの象徴的側面「女性性の需要」「男性性の権威」<br/>
-                    一見相反する2つの意味はどちらも等しく青の側面なのです。
+                    青は「言葉による自己表現」<span>「受け入れて手放す」青のエネルギーは</span>「自分の想いを語る」ための内外の<span>サポートをしてくれます。<br/></span>
+                    青の大きなテーマ。<span>「女性性・包み込む事・受け入れる」</span>青の2つの象徴的側面<span>「女性性の需要」「男性性の権威」<br/></span>
+                    一見相反する2つの意味はどちらも<span>等しく青の側面なのです。</span>
                   </p>
                 </div>{/*concept__colorOther--blue*/}
               </div>{/*concept__colorOther*/}
@@ -332,7 +337,7 @@ export default class IndexPage extends React.Component {
                   <table className="menu__contents">
                     <tbody>
                       <tr>
-                        <th className="menu__title"colSpan="3" rowSpan="3"><strong>経絡リンパケアトリートメント</strong></th>
+                        <th className="menu__title"colSpan="3" rowSpan="3"><strong>経絡リンパケア<span>トリートメント</span></strong></th>
                         <td className="menu__price">40分　4,500円</td>
                       </tr>
                       <tr>

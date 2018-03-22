@@ -23,6 +23,10 @@ $primary-invert: $kaldi-red-invert
 
 @import "~bulma"
 
+span
+  +touch
+    display: block
+
 .back
   background: #ffffff
 
@@ -38,9 +42,10 @@ section
     padding: 50px 0
 
 h2
-  margin-bottom: 4rem!important
+  +desktop
+    margin-bottom: 4rem!important
   +touch
-    margin: 0
+    margin: 0!important
 
 
 // title
@@ -95,6 +100,7 @@ html.has-navbar-fixed-top
 
 .information
   &__contents
+    margin-top: 2rem
   &__item
     border: 1px solid #000000
     background: #ffffff
@@ -118,7 +124,7 @@ html.has-navbar-fixed-top
   &__contents
     margin: 2rem 0
   &__main
-    padding: 2rem 0.5rem
+    padding: 2rem 0.5rem 0
   &__image
     border-radius: 1rem
     width: 100%
@@ -151,11 +157,16 @@ html.has-navbar-fixed-top
       padding: 1rem
       width: 100vw
     &--text
+      margin: 1rem
+      width: 100%
       +touch
         border-bottom: 1px solid #000000
+        border-right: 1px solid #000000
+        border-left: 1px solid #000000
     &--title
       padding: 0 1rem 1rem 0
-      margin-top: 10px
+      +desktop
+        margin-top: 10px
       +touch
         width: 100%
         display: block
@@ -167,7 +178,7 @@ html.has-navbar-fixed-top
         width: 100%
         display: block
         text-align: center!important
-        font-size: 1rem
+        padding-bottom: 1rem
   &__contents
     margin: 0 auto
   &__next--text
@@ -189,89 +200,110 @@ html.has-navbar-fixed-top
 .concept
   &__image
     +desktop
-      width: 50%
+      width: 30%
     & img
       +desktop
         width: 70%
+        margin-left: 5rem
       +touch
         width: 100%
-    & figure
-      +desktop
-        margin-left: calc(50% - 10rem)
-  & h3
+
+    & h3
     +touch
       font-size: 1.1rem!important
       padding: 0 1rem
   &__text
     +desktop
-      width: 50%
+      width: 70%
     &--content
       line-height: 2rem
       margin: 0.5rem
   &__main
-    margin: 0 auto
+    padding: 1rem
     width: 100%
-    & span
-      color: #B4045F
   &__color
     margin: 1rem
     padding: 1rem
     border: 0.5rem solid #B4045F
     border-radius: 5px
-    & span
-      color: #B4045F
-      font-size: 1.5rem
+    & p
+      margin-top: 1rem
+      line-height: 2
+    & h3
+      & span
+        color: #B4045F
+        font-size: 1.5rem
+        +touch
+          font-size: 1.4rem
   &__colorOther
+    & p
+      margin-top: 1rem
+      line-height: 2
     &--red
       margin: 1rem
       padding: 1rem
       border: 0.5rem solid #DF0101
       border-radius: 5px
       +desktop
-        width: 45rem        
-      & span
-        color: #DF0101
-        font-size: 1.5rem
+        width: 45rem 
+      & h4       
+        & span
+          color: #DF0101
+          font-size: 1.5rem
+          +touch
+            font-size: 1.4rem
     &--orange
       margin: 1rem
       padding: 1rem
       border: 0.5rem solid #DF7401
       border-radius: 5px
       +desktop
-        width: 45rem        
-      & span
-        color: #DF7401
-        font-size: 1.5rem
+        width: 45rem 
+      & h4       
+        & span
+          color: #DF7401
+          font-size: 1.5rem
+          +touch
+            font-size: 1.4rem
     &--yellow
       margin: 1rem
       padding: 1rem
       border: 0.5rem solid #FFBF00
       border-radius: 5px
       +desktop
-        width: 45rem        
-      & span
-        color: #FFBF00
-        font-size: 1.5rem
+        width: 45rem 
+      & h4       
+        & span
+          color: #FFBF00
+          font-size: 1.5rem
+          +touch
+            font-size: 1.4rem
     &--green
       margin: 1rem
       padding: 1rem
       border: 0.5rem solid #0B610B
       border-radius: 5px
       +desktop
-        width: 45rem        
-      & span
-        color: #0B610B
-        font-size: 1.5rem
+        width: 45rem 
+      & h4       
+        & span
+          color: #0B610B
+          font-size: 1.5rem
+          +touch
+            font-size: 1.4rem
     &--blue
       margin: 1rem
       padding: 1rem
       border: 0.5rem solid #0101DF
       border-radius: 5px
       +desktop
-        width: 97.5%       
-      & span
-        color: #0101DF
-        font-size: 1.5rem
+        width: 97.5%  
+      & h4     
+        & span
+          color: #0101DF
+          font-size: 1.5rem
+          +touch
+            font-size: 1.4rem
 
 //menu
 .menu
