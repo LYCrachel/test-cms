@@ -37,7 +37,7 @@ body
   background-color: rgba(224, 0, 228, 0.06)
 
 section
-  padding: 100px 0
+  padding: 150px 0
   +touch
     padding: 50px 0
 
@@ -51,17 +51,24 @@ h2
 // title
 
 .yuba
-  background-image: url("../img/shop_1.jpg"),url("../img/shop_2.jpg")
-  background-position: right,left
+  background-image: url("../img/LeMansM_BG.jpg")
+  background-size: 100% 100%
   background-repeat: no-repeat
   padding: 0
   +touch
-    background-image: url("../img/shop_1.jpg")
     width: 100%
 
 .yuba2
-  background-color: rgba(255,255,255,0.6)
   height: 100vh
+  +touch
+    width: 100%
+
+.image-masako-logo
+  width: 100%
+  & img
+    width: 75%
+    +touch
+      width: 100%
 
 .titleText
   font-weight: bold
@@ -72,6 +79,7 @@ h2
 
 .navbar
   box-shadow: 1px 0 5px 1px #999
+  opacity: 0.8
 
 .navbar-item img 
   max-height: 50px !important
@@ -80,7 +88,7 @@ html.has-navbar-fixed-top
   padding-top: 
 
 .nav-height
-  height: 8rem
+  height: 6rem
   display: none !important
 
 .navbar-logo
@@ -90,11 +98,12 @@ html.has-navbar-fixed-top
   border-left: 1px solid #000
 
 .navbar-title
-  font-size: 20px
+  font-size: 1rem
   text-align: center
+  opacity: 1
 
 .contents-height
-  padding-top: 4rem
+  padding-top: 2rem
 
 // contents
 
@@ -155,10 +164,10 @@ html.has-navbar-fixed-top
     width: 25rem
     +touch
       padding: 1rem
-      width: 100vw
+      width: 100%
     &--text
       margin: 1rem
-      width: 100%
+      width: 95%
       +touch
         border-bottom: 1px solid #000000
         border-right: 1px solid #000000
@@ -314,14 +323,16 @@ html.has-navbar-fixed-top
       font-size: 1.3rem
     &--back
       background: #ffffff
-      border-radius: 5rem
+      border: 2px solid #000000
       +desktop
         padding: 2rem 5rem
+        border-radius: 5rem
         width: 50rem
         margin: 0 auto
       +touch
         padding: 2rem
         margin: 1rem
+        border-radius: 1rem
   &__title
     text-align: left
     padding-right: 1rem
@@ -343,5 +354,7 @@ html.has-navbar-fixed-top
     padding: 2rem 0
     & p
       text-align: center
+  &__map
+    margin-top: 1rem
 
 
