@@ -6,9 +6,9 @@ import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
 import counseling from "../img/shop_2.jpg";
 import space from "../img/shop_1.jpg";
-import title from "../img/レマンズ.gif";
 import logologo from "../img/logo.gif";
 import photo from "../img/サロン.jpg";
+import head from "../img/LeMansM_logoTitle.png";
 
 
 export default class IndexPage extends React.Component {
@@ -25,6 +25,26 @@ export default class IndexPage extends React.Component {
     window.netlifyIdentity.init();
   }
 
+  constructor() {
+    super();
+
+    this.state = {
+      intervalId: 0
+    };
+  }
+
+  scrollStep() {
+    if (window.pageYOffset === 0) {
+      return;
+    } else {
+      window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+    }
+  }
+
+  scrollToTop() {
+    let intervalId = setInterval(this.scrollStep.bind(this),this.props.delayInMs);
+    // this.setState({ intervalId: intervalId });
+  }
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
@@ -36,14 +56,8 @@ export default class IndexPage extends React.Component {
             <div className="hero-body yuba2">
               <div className="container has-text-centered">
                 <figure className="image-masako-logo">
-                  <img src={logo} alt="logo" width="200" />
+                  <img src={head} alt="head"/>
                 </figure>
-                <figure className="image-masako-title">
-                  <img src={title} alt="レマンズ" width="500" />
-                </figure>
-                <p className="titleText">
-                  優しい温もりに心癒されるリラクゼーションスペース
-                </p>
               </div>
             </div>
           </div>
@@ -53,7 +67,7 @@ export default class IndexPage extends React.Component {
           onLoad={() => this.handleScriptLoad()}
         />
         <div className="">
-          <section className="information">
+          <section className="information" id="information">
             <h2 className="title has-text-centered">≪INFORMATION≫</h2>
             <div className="information__contents">
               {posts
@@ -76,7 +90,7 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
 
-          <section className="greeting back is-fullheight">
+          <section className="greeting back is-fullheight" id="salon">
             <h2 className="title has-text-centered">≪SALON CONCEPT≫</h2>
             <div className="greeting__main">
               <p className="is-size-6-desktop is-size-7-touch has-text-centered greeting__text">
@@ -102,7 +116,7 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text greeting__text--first has-text-centered-touch">
-                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Consept1　<span>優しさの溢れる手</span></strong></h4>
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Consept 1　<span>優しさの溢れる手</span></strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
                       「レ・マンス(Les Mains)」とは、
                       <span>フランス語で「両手」を意味します。<br /></span>
@@ -121,7 +135,7 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text greeting__text--second has-text-centered-touch">
-                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept2　<span>お客様と丁寧に向き合う</span></strong></h4>
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept 2　<span>お客様と丁寧に向き合う</span></strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
                       2006年11月のオープン以来、<span>もっとも大切にしているのは、<br/></span>
                       「お客様一人ひとりの体質や体調、<span>ご希望に合わせた最適なトリートメントの提供」。<br/></span>
@@ -140,7 +154,7 @@ export default class IndexPage extends React.Component {
                     />
                   </figure>
                   <div className="greeting__text greeting__text--third has-text-centered-touch">
-                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept3　<span>心と体がゆったりする時空間づくり</span></strong></h4>
+                    <h4 className="is-size-5-desktop is-size-6-touch"><strong>Concept 3　<span>心と体がゆったりする時空間づくり</span></strong></h4>
                     <p className="is-size-6-desktop is-size-7-touch">
                       オリジナルのメソッドによるトリートメントは、<span>ゆったりとした時間の流れの中で、<br /></span>
                       優しい音楽や照明の灯り、心が柔らかくなる香りなど、<br />
@@ -152,7 +166,7 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
 
-          <section className="introduction is-fullheight">
+          <section className="introduction is-fullheight" id="introduction">
             <h2 className="has-text-centered title">≪INTRODUCTION≫</h2>
             <div className="container">
               <div className="introduction__contents is-flex-desktop">
@@ -228,7 +242,7 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
 
-          <section className="concept back is-fullheight  has-text-centered-touch">
+          <section className="concept back is-fullheight  has-text-centered-touch" id="school_c">
             <h2 className="title has-text-centered">≪SCHOOL CONCEPT≫</h2>
             <div className="container">
               <div className="concept__main is-flex-desktop">
@@ -323,13 +337,13 @@ export default class IndexPage extends React.Component {
               </div>{/*concept__colorOther*/}
             </div>
           </section>
-          <section className="school is-fullheight">
+          <section className="school is-fullheight" id="school">
             <h2 className="title has-text-centered">≪SCHOOL≫</h2>
             <div className="school__main container">
               
             </div>{/*school*/}
           </section>
-          <section className="menu is-fullheight">
+          <section className="menu back is-fullheight" id="menu">
             <h2 className="title has-text-centered">≪MENU≫</h2>
             <div className="container">
               <div className="menu__main">
@@ -408,32 +422,35 @@ export default class IndexPage extends React.Component {
             </div>{/*container*/}
           </section>
 
-          <section className="tel back">
+          <section className="tel" id="contact">
             <h2 className="title has-text-centered">≪CONTACT≫</h2>
             <p className="tel-number is-size-3 has-text-centered">090-8245-3516</p>
           </section>
 
 
-          <section className="access is-fullheight">
+          <section className="access back is-fullheight" id="access">
             <h2 className="has-text-centered title">≪ACCESS≫</h2>
             <div className="container access__address">
               <p className="is-size-4-desktop is-size-5-touch">
                 〒 721-0963<br/>
                 広島県福山市南手城町3丁目7番9号
               </p>
-            </div>
-            <div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7487104581096!2d133.39406931462378!3d34.483898502307376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35511142c48dc3d5%3A0x330fb0bb6803506!2z44CSNzIxLTA5NjMg5bqD5bO255yM56aP5bGx5biC5Y2X5omL5Z-O55S677yT5LiB55uu77yX4oiS77yZ!5e0!3m2!1sja!2sjp!4v1518140441835"
-                style={{
-                  border: "0",
-                  width: "100%",
-                  height: "500px",
-                  frameborder: "0"
-                }}
-              />
+              <div className="access__map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7487104581096!2d133.39406931462378!3d34.483898502307376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35511142c48dc3d5%3A0x330fb0bb6803506!2z44CSNzIxLTA5NjMg5bqD5bO255yM56aP5bGx5biC5Y2X5omL5Z-O55S677yT5LiB55uu77yX4oiS77yZ!5e0!3m2!1sja!2sjp!4v1518140441835"
+                  style={{
+                    border: "0",
+                    width: "100%",
+                    height: "500px",
+                    frameborder: "0"
+                  }}
+                />
+              </div>
             </div>
           </section>
+          <div className="scroll__top is-fixed-bottom" ref={ el => this.container = el}>
+            <p onClick={ () => {this.scrollToTop();}}>↑</p>
+          </div>
         </div>
       </div>
     );
