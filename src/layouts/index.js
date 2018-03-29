@@ -9,6 +9,8 @@ const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="レ・マンズ・M">
       {/* <html className="has-navbar-fixed-top" /> */}
+      <meta name = "keyword" content = "レマンズM, les, le, レ・マンズ・M, リンパマッサージ, 福山, 手城町" />
+      <meta name = "description" content = "" />
     </Helmet>
     <Navbar />
     <div>{children()}</div>
