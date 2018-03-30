@@ -2,8 +2,8 @@ import React from "react";
 import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
-import {TweenMax} from "gsap";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
+// import {TweenMax} from "gsap";
+// import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
@@ -14,10 +14,10 @@ import photo from "../img/サロン.jpg";
 import head from "../img/LeMansM_logoTitle.png";
 
 const scrollTo = (target) => {
-  TweenMax.to(window, 0.5, {
-    ease: Expo.easeOut,
-    scrollTo: target
-  })
+  // TweenMax.to(window, 0.5, {
+  //   ease: Expo.easeOut,
+  //   scrollTo: target
+  // })
 }
 
 
