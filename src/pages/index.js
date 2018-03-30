@@ -2,6 +2,9 @@ import React from "react";
 import Link from "gatsby-link";
 import Script from "react-load-script";
 import graphql from "graphql";
+import {TweenMax} from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
 import masako from "../img/masako.jpg";
 import logo from "../img/Lesmains_logo_transparent.gif";
 import counseling from "../img/shop_2.jpg";
@@ -9,6 +12,13 @@ import space from "../img/shop_1.jpg";
 import logologo from "../img/logo.gif";
 import photo from "../img/サロン.jpg";
 import head from "../img/LeMansM_logoTitle.png";
+
+const scrollTo = (target) => {
+  TweenMax.to(window, 0.5, {
+    ease: Expo.easeOut,
+    scrollTo: target
+  })
+}
 
 
 export default class IndexPage extends React.Component {
@@ -25,32 +35,12 @@ export default class IndexPage extends React.Component {
     window.netlifyIdentity.init();
   }
 
-  constructor() {
-    super();
-
-    this.state = {
-      intervalId: 0
-    };
-  }
-
-  scrollStep() {
-    if (window.pageYOffset === 0) {
-      return;
-    } else {
-      window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
-    }
-  }
-
-  scrollToTop() {
-    let intervalId = setInterval(this.scrollStep.bind(this),this.props.delayInMs);
-    // this.setState({ intervalId: intervalId });
-  }
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div>
+      <div id="top">
         <div className="hero is-fullheight">
           <div className="hero-body yuba">
             <div className="hero-body yuba2">
@@ -448,9 +438,6 @@ export default class IndexPage extends React.Component {
               </div>
             </div>
           </section>
-          <div className="scroll__top is-fixed-bottom" ref={ el => this.container = el}>
-            <p onClick={ () => {this.scrollToTop();}}>↑</p>
-          </div>
         </div>
       </div>
     );
