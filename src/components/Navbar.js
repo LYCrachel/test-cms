@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "gatsby-link";
-// import { TweenMax } from "gsap";
-// import ScrollToPlugin from "gsap/ScrollToPlugin";
+import { TweenMax } from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import github from "../img/github-icon.svg";
 import logo from "../img/Lesmains_logo_transparent.gif";
 import title from "../img/レマンズ.gif";
 
 const scrollTo = (target) => {
-  // TweenMax.to(window, 0.5, {
-  //   ease: Expo.easeOut,
-  //   scrollTo: target
-  // })
+  TweenMax.to(window, 0.5, {
+    ease: Expo.easeOut,
+    scrollTo: target
+  })
 }
 
 
